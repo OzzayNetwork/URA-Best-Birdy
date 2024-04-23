@@ -1398,7 +1398,7 @@ padding: 0px;
         height: 100%;
         background: #002d804d;
         content: "";
-        background-image: linear-gradient(to bottom right, #ff000038, #0a02267d);
+        background-image:linear-gradient(to bottom right, #fff20070, #021f45b8);
     }
 .bg-backgroung-pri{
     background-color: red !important;
@@ -1426,6 +1426,31 @@ padding: 0px;
 }
 .text-warning-ug{
     color: #fff200 !important;
+}
+.portal-title {
+    height: 70px;
+    display: flex;
+    flex-flow: column;
+    padding-top: 15px;
+}
+.portal-title h4 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.portal-title h4 {
+    font-size: 13px;
+    font-weight: 700;
+}
+.portal-title h4 {
+    font-size: 13px;
+    font-weight: 700;
+}
+.logo-lg img {
+    margin-right: 12px;
+}
+.fs-10{
+    font-size: 10px !important;
 }
 
     
