@@ -115,7 +115,7 @@
     }
     
     .table-edits input:focus {
-        border-color: #556ee6;
+        border-color: #1c56a3;
         border-width: 2px;
     }
     
@@ -128,7 +128,7 @@
     }
     
     .add-field:hover {
-        color: #556ee6
+        color: #1c56a3
     }
     
     .height-calc-21 {
@@ -157,7 +157,7 @@
         text-indent: 0!important;
         line-height: 24px;
         content: '+';
-        background-color: #556ee6;
+        background-color: #1c56a3;
         cursor: pointer;
     }
     
@@ -720,7 +720,7 @@ padding: 0px;
     }
     
     .alert-border {
-        border: 0.5px solid #556ee657;
+        border: 0.5px solid #1c56a357;
         border-radius: 0px;
     }
     
@@ -981,7 +981,7 @@ padding: 0px;
     }
     
     .navbar-nav a.active {
-        color: #556ee6;
+        color: #1c56a3;
         color: #f9ff00 !important;
         position: relative;
     }
@@ -1053,7 +1053,7 @@ padding: 0px;
     
     .invoice-form {
         background: #f7f7fa2e;
-        border: 1px solid #556ee6 !important;
+        border: 1px solid #1c56a3 !important;
     }
 
     .invoice-table {
@@ -1078,7 +1078,7 @@ padding: 0px;
     }
     
     .mail-list a.active {
-        color: #556ee6;
+        color: #1c56a3;
         font-weight: 500;
     }
     
@@ -1253,7 +1253,7 @@ padding: 0px;
         height: calc(100% - 8px);
     }
     .bg-primary-alt{
-        background-color: #556ee6 !important;
+        background-color: #1c56a3 !important;
     }
     .mouse-pointer{
         cursor: pointer;
@@ -1423,6 +1423,9 @@ padding: 0px;
 }
 .z-index-3{
     z-index: 3 !important;
+}
+.text-warning-ug{
+    color: #fff200 !important;
 }
 
     

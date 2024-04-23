@@ -19,7 +19,7 @@ var options = {
     dataLabels: {
       enabled: !1
     },
-    colors: ["#556ee6"],
+    colors: ["#1c56a3"],
     stroke: {
       curve: "smooth",
       width: 3
@@ -34,7 +34,7 @@ options = {
     height: 262
   },
   labels: ["MPESA", "CASH"],
-  colors: ["#556ee6", "#34c38f", "#f46a6a"],
+  colors: ["#1c56a3", "#34c38f", "#f46a6a"],
   legend: {
     show: !1
   },
@@ -60,7 +60,7 @@ var radialoptions1 = {
     dataLabels: {
       enabled: !1
     },
-    colors: ["#556ee6"],
+    colors: ["#1c56a3"],
     plotOptions: {
       radialBar: {
         hollow: {

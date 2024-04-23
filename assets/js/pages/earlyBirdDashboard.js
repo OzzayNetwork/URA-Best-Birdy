@@ -54,7 +54,7 @@ var walletOptions = {
         }
     },
     stroke: { lineCap: "round" },
-    colors: ["#556ee6", "#e83e8c", "#00a884", "#424242"],
+    colors: ["#1c56a3", "#e83e8c", "#00a884", "#424242"],
     labels: ["Bills Receipted", "Bills Created"],
     legend: { show: !1 }
 };
@@ -116,7 +116,7 @@ var options = {
         xaxis: {
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         },
-        colors: ["#556ee6", "#e83e8c", "#00a884", "#424242"],
+        colors: ["#1c56a3", "#e83e8c", "#00a884", "#424242"],
         legend: {
             position: "bottom"
         },
