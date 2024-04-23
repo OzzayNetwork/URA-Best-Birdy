@@ -7,12 +7,12 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Desk Birdy | Business Permits</title>
+    <title>URA | Uganda Revenue Authority</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.svg">
+    <link rel="shortcut icon" href="assets/images/URA_logo.png">
     <!-- droping file -->
     <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
@@ -282,7 +282,7 @@
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
-                        <li class="menu-title" key="t-pages">Best Birdy Billing system. </li>
+                        <li class="menu-title" key="t-pages">URA Tax Billing & Mngt portal</li>
 
                         <li class="side-bar-button">
                             <a href="bill-new.html"
@@ -296,6 +296,20 @@
                             <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-office-building-marker"></i>
+                                <span>Institutions</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="institute-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="institute-invoice-generate.html">Generate Invoice</a></li>
+                                <li><a href="institutes-collections-reports.html">Collections Reports</a></li>
+                                <li><a href="institutes-add-new.html">Add Insitute</a></li>
+                                
+                            </ul>
                         </li>
 
                         <li>
@@ -328,18 +342,6 @@
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-map-clock-outline"></i>
-                                <span>Land & Plots</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="land-quick-stat.html">Quick Stats</a></li>
-                                <li><a href="land-register.html">Land Rates</a></li>
-                                <li><a href="plot-rent-register.html">Plot Rents</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="bx bx-home-circle"></i>
                                 <span>Housing</span>
                             </a>
@@ -356,12 +358,7 @@
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="parking-stats.html">Quick Stats</a></li>
-                                <li><a href="parking-fleet.html">Seasonal Parking</a></li>
-                                <li><a href="parking-street.html">Daily Parking</a></li>
-                                <li><a href="parking-monthly.html">Monthly Parking</a></li>
-                                <li><a href="parking-weekly.html">Weekly Parking</a></li>
-                                <li><a href="parking-clamped.html">Vehicle Clamping</a></li>
-                                <li><a href="parking-register.html">Vehicle Register</a></li>
+                                <li><a href="parking-fleet.html">Fleet Management</a></li>
                             </ul>
                         </li>
 
@@ -394,9 +391,6 @@
                                 <span class="badge rounded-pill bg-danger float-end">10</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="flagged-transaction-correction.html">Transactions Correction</a></li>
-
-                                <li><a href="flagged-transaction-correction-report.html">Corrected Transactions report</a></li>
                                 <li><a href="flagged-payments.html">unmatched transactions</a></li>
                                 <li><a href="flagged-awaiting.html">Awaiting Receipting</a></li>
                                 <li><a href="flagged-mannualy.html">Mannualy Receipted Transactions </a></li>
@@ -410,12 +404,6 @@
                         <li>
                             <a href="finance-act.html" class="waves-effect">
                                 <i class="mdi mdi-currency-usd"></i><span>Finance act</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="finance-chart.html" class="waves-effect">
-                                <i class="mdi mdi-table"></i><span>Chart of Account</span>
                             </a>
                         </li>
 
@@ -438,26 +426,16 @@
                             </ul>
                         </li>
 
-                        <li>
-                            <a href="recon.html" class="waves-effect">
-                                <i class="bx bx-calendar-check"></i><span>Auto Reconciliation</span>
-                            </a>
-                        </li> 
-                         <li class="">
+                        <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi-certificate mdi"></i>
                                 <span>Certificates & Licenses</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="cert-biz-stats.html">Business Permits</a></li>
-                                <li><a href="cert-fire-stats.html">Fire Certificate</a></li>
-                                <li><a href="cert-alcohol-stats.html">Alcoholic Drinks Licence</a></li>
-                                <li><a href="cert-public-health-stats.html">Public Health Analytics</a></li>
-                                <li><a href="cert-med.html">Medical Examination</a></li>
-                                <li><a href="cert-hygine.html">Food Hygiene Certificate</a></li>
-                                <li><a href="cert-clearance.html">Health Clearance</a></li>
-                                <li><a href="cert-private.html">Private Health Facilities</a></li>
-                                <li><a href="cert-occupational.html">Occupational Certificate</a></li>
+                                <li><a href="cert-food.html">Food handlers certificate</a></li>
+                                <li><a href="food-hygine.html">Food Hygiene Certificate</a></li>
+
                             </ul>
                         </li>
 
@@ -468,11 +446,8 @@
                                 <span>Reports</span>
                             </a>
                             <ul class="sub-menu text-capitalize" aria-expanded="false">
-                                <li><a href="reports-subconty.html">Collections By Sub County</a></li>
+                                <li><a href="reports-subconty.html">Collections By  County</a></li>
                                 <li class=""><a href="reports-streams.html">Revenue Streams Collections</a></li>
-                                <li class=""><a href="reports-wards.html">Wards Collections</a></li>
-                                <li class=""><a href="reports-tax-officials.html">County Tax Officials</a></li>
-                                <li class=""><a href="reports-tax-payer.html">Tax Payer Transactions</a></li>
                                 <li class=""><a href="reports-zones.html">Collection Zones</a></li>
                                 <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
                                 <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a>
@@ -496,32 +471,14 @@
                         </li>
 
 
-                         <li>
+                        <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-monitor-multiple"></i>
                                 <span>System Users</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-userlist.html">Active Users</a></li>
-                                <li><a href="user-userlist-deactivated.html">Deactivated Users</a></li>
+                                <li><a href="user-userlist.html">System Users</a></li>
                                 <li><a href="user-registration.html">Add a system user</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-user-circle"></i>
-                                <span>Authentication Pages</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="auth-login.html">Login Page</a></li>
-                                <li><a href="auth-login-login2.html">Login Page 2</a></li>
-                                <li><a href="auth-recoverpw.html">Forgot Password</a></li>
-                                <li><a href="auth-email-verification.html">Email Verification</a></li>
-                                <li><a href="auth-two-step-verification.html">OTP</a></li>
-                                <li><a href="auth-two-step-verification-OTP.html">OTP 2</a></li>
-                                <li><a href="auth-password-confirmation.html">New Password</a></li>
-                                
                             </ul>
                         </li>
 
@@ -550,14 +507,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Fire Certificate Quick Stats</h4>
+                                <h4 class="mb-sm-0 font-size-18">Institutions Taxes</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Certificates & Licenses</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Fire Certificates</a></li>
-                                        <li class="breadcrumb-item active">Quick Stats</li>
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Institutions Taxes</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Quick Stats</a></li>
                                     </ol>
                                 </div>
 
@@ -579,23 +535,17 @@
                                         aria-label="Toggle navigation">
                                         <span class="mdi mdi-menu"></span>
                                     </button>
-                                    <div class="collapse navbar-collapse justify-content-between active"
-                                        id="navbarNavAltMarkup">
+                                    <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                         <div class="navbar-nav">
-                                                <a class="nav-item nav-link" href="cert-alcohol-stats.html">Quick Stats</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-ongoing.html">Ongoing Applications</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-inspection.html">Pending Inspection</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-court.html">Pending Court Review</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-approved.html">Awaiting Certification</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-declined.html">Declined </a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-cert-invoices.html">Invoices</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-active.html">Active Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-expired.html">Expired Certificates</a>
-                                                <a class="nav-item nav-link" href="cert-alcohol-map.html">Map View</a>
+                                                <a class="nav-item nav-link" href="institute-quick-stat.html">Quick Stats</a>
+                                                <a class="nav-item nav-link" href="institutes-collections-reports.html">Collections Reports</a>
+                                                <a class="nav-item nav-link" href="institutes-collections-services.html">Charges & Services</a>
+                                                <a class="nav-item nav-link" href="institutes-add-new.html">Add Institute</a>
+                                                
                                             </div>
 
                                         <form class="form-inline my-2 my-lg-0">
-                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">New Application</button>
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">Add Institution Category</button>
                                           </form>
                                         
 
@@ -1620,422 +1570,80 @@
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header liq-header">
-                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Alcoholic Drinks Licence New Application</h5>
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Institution Categories</h5>
                            
                             <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body pb-4 searching-modal-body">
-                            <div class="row">
-                                <div class="col-md-12 mb-3">
-                                    <label for="">Search or Input establishment details</label>
-                                    <select class="form-select liq-search-method" >
-                                        <option value="">Select Search Method</option>
-                                        <option value="search">Search from Existing Registered Businesses</option>
-                                        <option class="register">Unregestered Business</option>                                      
-                                    </select>
-
-                                   
+                       <div class="modal-body">
+                        <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Institution Categories Register</h3>
                                 </div>
                             </div>
-
-                            <div class="row">
-
-                                <!-- searching for an already registered business that has a valid certificate generated from the system -->
-                                <div class="col-12 business-id-search d-none">
-                                    <label for="">Search For Business To continue</label>
-                                    <div class="input-group mb-3">
-                                        
-                                        <input type="text" class="form-control" placeholder="Enter Business ID">
-                                        <button type="button" class="btn btn-primary waves-effect waves-light search-bz-btn">
-                                            <i class="bx bx-search-alt-2 font-size-16 align-middle me-2"></i> Search
-                                        </button>
-                                      </div>
-
-                                      <!-- business serach results start here display only  when there are results to be shown -->
-                                      <div class="row pt-3">
-
-                                        <!-- use this loader when serching for the business -->
-                                        <div  class="searching-biz-loader d-none">
-                                            <div class="loader-modal p-5">
-                                                <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                                    <div class="spinner-border text-dark m-1" role="status">
-                                                        <span class="sr-only fw-bold">Searching</span>
-                                                    </div>
-                                                    <p class="pt-4 fw-strong text-uppercase fw-bold">Please wait patiently while our system looks <br> for the business.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 biz-search-results d-none">
-                                            <table class="table table-sm text-uppercase table-striped">
-                                                <thead class="table-dark">
-                                                    <th colspan="2">Search Results for Business with <span class="text-warning">Business ID 1234</span></th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            Name of Establishment
-                                                        </th>
-                                                        <td>
-                                                            The big Palace Bar and Grill
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Sub County
-                                                        </th>
-                                                        <td>
-                                                            Rachuonyo South Subcounty
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Ward
-                                                        </th>
-                                                        <td>
-                                                            Name of the Ward
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Physical Address
-                                                        </th>
-                                                        <td>
-                                                            Next to the Big Super Market
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Building/Name of Premiscess
-                                                        </th>
-                                                        <td>
-                                                            The big Tower
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Postal Address
-                                                        </th>
-                                                        <td>
-                                                            123-100009 Eldoret
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Applicant's Name
-                                                        </th>
-                                                        <td>
-                                                            John Doe
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Phone Number
-                                                        </th>
-                                                        <td>
-                                                            0701234567
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <th>
-                                                            Email Address
-                                                        </th>
-                                                        <td>
-                                                            email@mail.com
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                        <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- use this for a search that has no results -->
-                                        <div class="col-12 no-results d-none">
-                                            <div class="p-4 border-radius border-solid border-primary border-2 d-flex flex-column align-items-center justify-content-center">
-                                                <div class="img mb-4 pt-3">
-                                                    <img src="assets/images/no-result-found-icon.svg" style="height: 65px;" class="img" alt="">
-                                                </div>
-                                                <div class="text-center">
-                                                    <h4 class="card-title text-uppercase text-dark">No results Found</h4>
-                                                    <p>
-                                                        The business ID you entered does not correspond to any registered business. Please try your search again <br> to find the desired results.</p>
-                                                    
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                      </div>
-                                      <!-- end of business serach results -->
-                                </div>
-
-
-                                <!-- form for registering ann unregistered business -->
-                                <div class="col-12 unregistered-biz-cont d-none">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Name of Establishment</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter the Business Name" spellcheck="false" data-ms-editor="true">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-8">
-                                            <div class="row">
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Name of Premices</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Building Name" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Sub County</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Ward</label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-        
-                                                <div class="col-sm-12 col-md-6">
-                                                    <label class="text-nowrap">Zone eg Market, </label>
-                                                    <select class="form-select mb-3" title="Select Subcounty">
-                                                        <option>Homa Bay town</option>
-                                                        <option>Ndhiwa</option>
-                                                        <option>...</option>
-                                                    </select>
-            
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Name</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg John Doe" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Applicant's Postal Address</label>
-                                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="eg 123-001200 Nairobi" spellcheck="false" data-ms-editor="true">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 col-md-4">
-                                           <div class="row">
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="formrow-firstname-input" class="form-label">Physical Address</label>
-                                                        <textarea placeholder="Enter the Business's Physical Address" class="form-control" name="" id="" cols="30" rows="10"></textarea>
-                                                    </div> 
-                                                </div>
-                                           </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Phone</label>
-                                                <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Phone Number" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-12 col-md-6">
-                                            <div class="mb-3">
-                                                <label for="formrow-firstname-input" class="form-label">Appilicant's Email</label>
-                                                <input type="email" class="form-control" id="formrow-firstname-input" placeholder="email@email.com" spellcheck="false" data-ms-editor="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 mt-3">
-                                            <h4 class="text-capitalize">Establishment's Physical location</h4>
-                                            <p>Select the address where this establishmnet is located from this map.</p>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="">
-                                                <div class="card-header bg-white boarder-bottom-1 d-none">
-                                                    <div class="row d-flex justify-content-between">
-                                                        <div class="col-12">
-                                                            <div class="search-box mb-2 me-2">
-                                                                <div class="position-relative">
-                                                                    <input type="text" class="form-control bg-light border-light rounded map-searcher" id="pac-inpu" placeholder="Search for location">
-                                                                    <i class="bx bx-search-alt search-icon"></i>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                
-                                                </div>
-                                                <div class="" style="height: 350px;">
-                                                    <div id="map" class="w-100 mt-1 h-100 live-map-cont main-map-container"></div>
-                                                </div>
-                
-                                            </div>
-                
-                                            <div class="">
-                                                <div class="position-relative ">
-                                                    <!-- map serach input box -->
-                                                    <div class="form-group map-searcher mt-3 pt-3">
-                                                        <input type="text" class="form-control form-control-lg text-black" placeholder="Search for a location" id="pac-input">
-                                                        <button title="Clear search results" class="btn btn-transparent border-0 clear-map"><i class="mdi mdi-close d-none"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <button  target="_blank" type="button" class="btn btn-success waves-effect waves-light w-100 generate-invoice-btn">
-                                                <i class="mdi mdi-checkbox-multiple-marked font-size-16 align-middle me-2"></i> Generate Invoice
-                                            </button>
-                                        </div>
-                
-                                       
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- matters payment and billing starts here -->
-
-                        <div class="modal-body d-none receipt-billing-modal-body">
-                            <div class="billing-receipting-loader">
-                                <div class="loader-modal p-5">
-                                    <div class="d-flex align-items-center justify-content-center p-5 text-center flex-column">
-                                        <div class="spinner-border text-dark m-1" role="status">
-                                            <span class="sr-only">Loading...</span>
-                                        </div>
-                                        <p class="pt-4 fw-strong text-uppercase">Generating Invoice Please Wait</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- generated invoice results -->
-                            <div class="row generated-invoice d-none">
-                                <div class="col-12">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <address>
-                                                <strong class="text-capitalize">Invoice Prepared for:</strong>
-                                                <br>Establishment Name: <span class="fw-semibold text-black">The Bar And Grill</span><br>
-                                               Phone: <span class="fw-semibold text-black">0704549859</span>
-                                               <br>
-                                                <br> Prepared on 2023-12-15 10:34:49 By Jane Waweru</address></div>
-                                    </div>
-                                   <div class="table-responsive">
-                                    <table class="table table-nowrap vertical-align-middle table-bordered ">
-                                        <thead class="table-dark">
-                                            <tr class="vertical-align-middle">
-                                                <th style="width: 70px;">1.</th>
-                                                <th class="text-uppercase" colspan="3">
-                                                    Invoice No:. <span class="fw-bold text-warning">BLL123456</span> 
-                                                </th>
-                                                
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits">
+                                        <thead class="table-light">
+                                            <tr class="text-uppercase table-dark">
+                                                <th>#</th>
+                                                <th>Category</th>                                                
+                                                <th></th>
                                             </tr>
                                         </thead>
-                                        <thead class="bg-light">
-                                            <tr>
-                                                <th style="width: 70px;">No.</th>
-                                                <th colspan="2">Item Description (X QTY)</th>
-                                                <th class="text-end">Amount</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="bg-light text-uppercase table-bordered">
-                                            <tr>
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Invoice Sub Total
-                                                </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 500
-                                                </td>
-                                               
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Amount Paid
-                                                </td>
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    KES 0.00
-                                                </td>
-                                               
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">1.</td>
+                                                <td class="">
+                                                    Schools
+                                                </td> 
                                             </tr>
 
-                                            <tr class="table-success">
-                                                <td></td>
-                                                
-                                                <td class="text-right fw-bold text-uppercase" colspan="2">
-                                                    Total Payable
+                                            <tr data-id="1">
+                                                <td style="width: 80px">2.</td>
+                                                <td class="">
+                                                    Hospitals
+                                                </td> 
+                                            </tr>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">3.</td>
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
                                                 </td>
-                                                <td class="border-0 text-end text-right">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 500</h5>
+                                              
+
+                                            </tr>
+
+                                            <tr class="cloneCharges d-none">
+                                                <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
                                                 </td>
-                                               
+                                              
+
+                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                    <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Category</span></span>
+                                                </td>
                                             </tr>
                                         </tfoot>
-                                        <tbody class="text-uppercase">
-                                            <tr title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
-                                                <td>01</td>
-                                                <td colspan="2">
-                                                    <p class="mb-0 p-0 m-0"> ALCOHOLIC DRINKS LICENCE Application (X1)</p>
-                                                </td>
-                                                <td class="text-end text-right">KES 500</td>
-                                                
-                                            </tr>
-
-                                         
-
-
-
-                                            
-                                        </tbody>
                                     </table>
-                                   </div>
-
-                                   <div class="d-flex text-right justify-content-end align-self-end">
-                                    <button type="button" data-toggle="modal" data-target="#payment-modal" class="btn btn-primary waves-effect btn-label waves-light fw-bold text-uppercase me-3">
-                                        <i class="mdi mdi-send label-icon"></i> Receipt Invoice
-                                    </button>
-                                    <a href="PrintDocs/Bill/bill.html" target="new" class="btn btn-success waves-effect waves-light fw-semibold text-uppercase" type="button"><i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Invoice</a> 
-                                   </div>
                                 </div>
+
+                                
                             </div>
-                            <!-- end of generated receipt results -->
-                        </div>
+                           </div>
+
+                       </div>
 
                         
                     </div>
@@ -2134,6 +1742,10 @@
 
      <!-- active vs expired certificats -->
      <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+     <!-- Table Editable plugin -->
+     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+     <script src="assets/js/pages/table-editable.int.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
