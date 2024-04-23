@@ -1443,8 +1443,9 @@ padding: 0px;
     font-weight: 700;
 }
 .portal-title h4 {
-    font-size: 13px;
+    font-size: 22px;
     font-weight: 700;
+    margin-bottom: 0px;
 }
 .logo-lg img {
     margin-right: 12px;
