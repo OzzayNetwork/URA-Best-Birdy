@@ -288,7 +288,8 @@ function initMap() {
     //the map options
     var options = {
         zoom: 15,
-        center: { lat: -1.2921, lng: 36.8219 }
+        center: { lat: 0.3155650221954005, lng:  32.579890854531726 }
+
     }
 
 
@@ -1660,8 +1661,8 @@ function initMap() {
     // reverse geo coding
     function reverseGeocoding(Latitude, longitude) {
         const KEY = "AIzaSyBl3dCvpVQUs04SOTCHgITw4Ts79-dRcfI";
-        const LAT = -1.270102;
-        const LNG = 36.8589333;
+        const LAT = -1.2813737050001681;
+        const LNG = 36.82616669758518;
         let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${Latitude},${longitude}&key=${KEY}`;
         fetch(url)
             .then(response => response.json())
