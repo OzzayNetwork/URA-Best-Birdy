@@ -771,7 +771,7 @@ body[data-sidebar=dark] .mm-active>i {
 }
 
 body[data-sidebar=dark] .mm-active .active {
-    color: #ffeb3b!important
+    color:#fff200 !important
 }
 
 body[data-sidebar=dark] .mm-active .active i {
