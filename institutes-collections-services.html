@@ -1550,13 +1550,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Collections Reports</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Services & Fees</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                         <li class="breadcrumb-item active">Institutions</li>
-                                        <li class="breadcrumb-item active">Collections Reports</li>
+                                        <li class="breadcrumb-item active">Services & Fees</li>
                                     </ol>
                                 </div>
 
@@ -1613,23 +1613,15 @@
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
                                         <div class="btn-group text-uppercase text-nowrap" role="group" aria-label="Basic example">
-                                            <a href="institutes-collections-reports.html" class="btn btn-outline-primary" aria-current="page">Pending Invoices</a>
-                                            <a href="institutes-collections-reports-pending.html" class="btn btn-outline-primary active">Paid Invoices</a>                                           
+                                            <button type="button" class="btn btn-success waves-effect waves-light" data-toggle="modal" data-target=".add-service">
+                                                <i class="bx bx-plus font-size-16 align-middle me-2"></i> Add Service
+                                            </button>                      
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-center p-3"  role="toolbar">
                                         
 
-                                        <label class="text-nowrap mb-0 mx-2">Filter By Institution Type</label>
-                                        <select class="form-select" title="Select Institution Type">
-                                            <option value="Ministries">Ministries</option>
-                                            <option value="Departments">Departments</option>
-                                            <option value="Agencies">Agencies</option>
-                                            <option value="Commissions">Commissions</option>
-                                            <option value="Authorities">Authorities</option>
-                                            <option value="Boards">Boards</option>
-                                            <option value="State-owned_enterprises">State-owned Enterprises</option>
-                                        </select>
+                                        
 
                                         <label class="text-nowrap mb-0 mx-2">Filter By Institution:</label>
                                         <select class="form-select" title="Select Institution">
@@ -1654,51 +1646,10 @@
                                                 <option value="nema">National Environment Management Authority (NEMA)</option>
                                               </optgroup>
                                         </select>
-
-                                        <label class="text-nowrap mb-0 mx-2">Filter By Services:</label>
-                                        <select class="form-select" title="Select Subcounty">
-                                            <option value="">Select a service</option>
-                                            <optgroup label="Ministry of Education">
-                                                <option value="Education tax">Education tax</option>
-                                                <option value="Examination fees">Examination fees</option>
-                                                <option value="Certification fees">Certification fees</option>
-                                                <option value="Licensing fees for educational institutions">Licensing fees for educational institutions</option>
-                                            </optgroup>
-                                            <optgroup label="Ministry of Health">
-                                                <option value="Health service levy">Health service levy</option>
-                                                <option value="Medical equipment import duties">Medical equipment import duties</option>
-                                                <option value="Licensing fees for medical facilities">Licensing fees for medical facilities</option>
-                                                <option value="Pharmaceutical taxes">Pharmaceutical taxes</option>
-                                            </optgroup>
-                                            <optgroup label="Ministry of Transport">
-                                                <option value="Vehicle registration fees">Vehicle registration fees</option>
-                                                <option value="Road tolls">Road tolls</option>
-                                                <option value="Licensing fees for transport companies">Licensing fees for transport companies</option>
-                                            </optgroup>
-                                            <optgroup label="Ministry of Trade and Industry">
-                                                <option value="Import tariffs">Import tariffs</option>
-                                                <option value="Export duties">Export duties</option>
-                                                <option value="Licensing fees for businesses">Licensing fees for businesses</option>
-                                                <option value="Trademark registration fees">Trademark registration fees</option>
-                                            </optgroup>
-                                            <optgroup label="Universities">
-                                                <option value="Tuition fees">Tuition fees</option>
-                                                <option value="Library fees">Library fees</option>
-                                                <option value="Student registration fees">Student registration fees</option>
-                                                <option value="Research grants">Research grants</option>
-                                            </optgroup>
-                                            <optgroup label="Hospitals">
-                                                <option value="Medical service fees">Medical service fees</option>
-                                                <option value="Hospital bed fees">Hospital bed fees</option>
-                                                <option value="Laboratory test fees">Laboratory test fees</option>
-                                                <option value="Specialist consultation fees">Specialist consultation fees</option>
-                                            </optgroup>
-                                        </select>
-
                                     </div>
                                 </div>
 
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom d-none">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                       <div class="flex-grow-1">
@@ -1743,77 +1694,24 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th class="text-nowrap" scope="col">NO.</th>
-                                                    <th class="text-nowrap" scope="col">Date Invoiced</th>
-                                                    <th class="text-nowrap" scope="col">Invoice No.</th>
+                                                    <th class="text-nowrap" scope="col">Fee/Service</th>                                                  
                                                     <th class="text-nowrap" scope="col">Institute</th>
-                                                    <th class="text-nowrap" scope="col">Service(s)</th>
-                                                    <th class="text-nowrap" scope="col">Client</th>
-                                                    <th class="text-nowrap" scope="col">Phone</th>
-                                                    <th class="text-nowrap" scope="col">Payment Mode</th>
-                                                    <th class="text-nowrap" scope="col">Served By</th>
-                                                    <th class="text-nowrap text-right" scope="col">Billed Amount</th>
-                                                    <th class="text-nowrap text-right" scope="col">Amount Paid</th>
-                                                    <th class="text-nowrap text-right" scope="col">Balance</th>
-                                                    <th class="text-nowrap" scope="col">Status</th>
-                                                    <th class="text-nowrap" scope="col">Date Paid</th>
+                                                    <th class="text-nowrap text-right" scope="col">Unit Price</th>                                                    
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">1</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
+                                                    <td class="text-capitalize text-nowrap">1.</td>
+                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>                                                 
+                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>    
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 34,000</td>                                               
                                                     <td>
                                                         <div class="d-flex justify-content-end"><button
                                                                 class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">2</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                data-target="#billDetail" data-toggle="modal" type="button">Edit</button>
+                                                            <div class="dropdown d-none">
+                                                                <a aria-haspopup="true" class="text-muted font-size-16" data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
                                                                         data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
                                                                             class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
@@ -1826,26 +1724,16 @@
                                                     </td>
                                                 </tr>
                                                 <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
+                                                    <td class="text-capitalize text-nowrap">2.</td>
+                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>                                                 
+                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>    
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 34,000</td>                                               
                                                     <td>
                                                         <div class="d-flex justify-content-end"><button
                                                                 class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                data-target="#billDetail" data-toggle="modal" type="button">Edit</button>
+                                                            <div class="dropdown d-none">
+                                                                <a aria-haspopup="true" class="text-muted font-size-16" data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
                                                                         data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
                                                                             class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
@@ -1858,90 +1746,16 @@
                                                     </td>
                                                 </tr>
                                                 <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">4</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
+                                                    <td class="text-capitalize text-nowrap">3.</td>
+                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>                                                 
+                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>    
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 34,000</td>                                               
                                                     <td>
                                                         <div class="d-flex justify-content-end"><button
                                                                 class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">5</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">6</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
+                                                                data-target="#billDetail" data-toggle="modal" type="button">Edit</button>
+                                                            <div class="dropdown d-none">
+                                                                <a aria-haspopup="true" class="text-muted font-size-16" data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
                                                                 <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
                                                                         data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
                                                                             class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
@@ -1957,21 +1771,8 @@
                                             </tbody>
                                             <tfoot class="table-dark">
                                                 <tr>
-                                                    <th class="text-nowrap text-right">10 Bills </th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;750.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;70.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;680.00</span></td>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
+                                                    <th class="text-nowrap" colspan="5">34 Services</th>
+                                                   
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -2077,6 +1878,74 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- end of bill creation modal -->
+
+            <!-- add a service -->
+
+            <div class="modal fade add-service" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Add A service</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="formrow-firstname-input" class="form-label">Institution</label>
+                                        <select class="form-select" title="Select Institution">
+                                            <optgroup label="Government Institutions">
+                                                <option value="ministry_of_education">Ministry of Education</option>
+                                                <option value="ministry_of_health">Ministry of Health</option>
+                                                <option value="uganda_police_force">Uganda Police Force</option>
+                                                <option value="uganda_prisons">Uganda Prisons</option>
+                                                <option value="uganda_defense_force">Uganda Defense Force</option>
+                                              </optgroup>
+                                              <optgroup label="Hospitals">
+                                                <option value="mulago">Mulago National Referral Hospital</option>
+                                                <option value="mbale_hospital">Mbale Regional Referral Hospital</option>
+                                                <option value="gulu_hospital">Gulu Regional Referral Hospital</option>
+                                                <option value="mbarara_hospital">Mbarara Regional Referral Hospital</option>
+                                                <option value="jinja_hospital">Jinja Regional Referral Hospital</option>
+                                              </optgroup>
+                                              <optgroup label="Other Institutions">
+                                                <option value="kcca">Kampala Capital City Authority (KCCA)</option>
+                                                <option value="kcca_schools">KCCA Schools</option>
+                                                <option value="nssf">National Social Security Fund (NSSF)</option>
+                                                <option value="nema">National Environment Management Authority (NEMA)</option>
+                                              </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="formrow-firstname-input" class="form-label">Enter servivce name</label>
+                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Service Name" spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="formrow-firstname-input" class="form-label">Unit Price</label>
+                                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Unit Price" spellcheck="false" data-ms-editor="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-5">
+                                    <button type="submit" class="btn btn-primary w-100 ">Submit</button>
+                                </div>
+                            </div>
+                       </div>
+
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+            <!-- end of service adding  -->
 
 
 
