@@ -523,6 +523,7 @@
                                         <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
                                             <div class="navbar-nav">
                                                     <a class="nav-item nav-link" href="institute-quick-stat.html">Quick Stats</a>
+                                                    <a class="nav-item nav-link" href="institute-invoice-generate.html">Create Invoice</a>
                                                     <a class="nav-item nav-link" href="institutes-collections-reports.html">Collections Reports</a>
                                                     <a class="nav-item nav-link" href="institutes-collections-services.html">Charges & Services</a>
                                                     <a class="nav-item nav-link" href="institutes-add-new.html">Add Institute</a>
@@ -540,7 +541,7 @@
                             </div>
     
                         </div>
-                    </div>
+                        </div>
                     <!-- end of toolbar -->
                     <div class="row">
                                              
@@ -1328,6 +1329,94 @@
                 <!-- /.modal-dialog -->
             </div>
             <!-- invoice details -->
+
+             <!-- Bill creation modal -->
+             <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Institution Categories</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                        <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Institution Categories Register</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits">
+                                        <thead class="table-light">
+                                            <tr class="text-uppercase table-dark">
+                                                <th>#</th>
+                                                <th>Category</th>                                                
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">1.</td>
+                                                <td class="">
+                                                    Schools
+                                                </td> 
+                                            </tr>
+
+                                            <tr data-id="1">
+                                                <td style="width: 80px">2.</td>
+                                                <td class="">
+                                                    Hospitals
+                                                </td> 
+                                            </tr>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">3.</td>
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                            </tr>
+
+                                            <tr class="cloneCharges d-none">
+                                                <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                    <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Category</span></span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                       </div>
+
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of bill creation modal -->
 
             <footer class="footer ">
                 <div class="container-fluid ">
