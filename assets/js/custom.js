@@ -614,6 +614,25 @@ $(window).on('load', function() {
             $('.landrate-rev').removeClass("d-none").siblings().addClass('d-none')
         }
 
+        if(this.value==="plotRent"){
+            $('.plot-rev').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value==="plans"){
+            $('.plans').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        if(this.value==="Advert"){
+            $('.signs').removeClass("d-none").siblings().addClass('d-none')
+        }
+        if(this.value==="weight"){
+            $('.weight-row').removeClass("d-none").siblings().addClass('d-none')
+        }
+
+        //alert(this.value)
+
+        
+
         if(this.value==="Others"){
 
             $('.others-rev').removeClass("d-none").siblings().addClass('d-none')
@@ -900,6 +919,22 @@ $(function () {
   $('.btn-send').on('click', function(){
     $('.transaction-summary').addClass('d-none')
     $('.loader-panel').removeClass('d-none')
+    $('#payment-modal .close-modal').addClass('d-none')
+    // $('.new-alcohol-application').modal("close")
+
+    // closing the invoicing modal
+    $('.new-alcohol-application .btn-close').click()
+    $('#receivePay .btn-close').click()
+
+    // closing loader
+    setTimeout(function() {
+        $('.loader-panel').addClass('d-none')
+        $('.sent-success').removeClass('d-none')
+        $('#payment-modal .close-modal').removeClass('d-none')
+        }, 4000); // 4000 milliseconds = 4 seconds
+
+
+    $('.modal-footer-btn-pay').addClass('d-none')
     $('.bill-modal-footer').addClass('d-none')
   })
 
@@ -909,3 +944,68 @@ $(function () {
     $('.new-vehicles-container-modal').addClass('d-none').siblings('.loader-panel').removeClass('d-none')
     $('.add-car-modal address').addClass('d-none')
   })
+
+
+//   selecteing liquore search method
+$('.liq-search-method').on('change', function(e){
+    var theVal=$(this).val()
+    // alert(theVal)
+    if(theVal=="search"){
+        $('.business-id-search').removeClass('d-none').siblings().addClass('d-none')
+    }
+
+    if(theVal=="Unregestered Business"){
+        $('.unregistered-biz-cont').removeClass('d-none').siblings().addClass('d-none')
+    }
+})
+// end of liq search method
+
+$('.search-bz-btn').on('click', function(e){
+    
+    $('.searching-biz-loader').removeClass('d-none').siblings().addClass('d-none')
+
+    setTimeout(function() {
+        $('.searching-biz-loader').addClass('d-none')
+        $('.biz-search-results').removeClass('d-none')
+    }, 4000); // 4000 milliseconds = 4 seconds
+})
+
+// generating invoice modal and staff
+$('.generate-invoice-btn').on('click', function(e){
+   $('.searching-modal-body').addClass('d-none')
+   $('.receipt-billing-modal-body').removeClass('d-none')
+   $('.liq-header').addClass('d-none')
+
+//    hiding the loader during invoicing
+
+   setTimeout(function() {
+    $('.billing-receipting-loader').addClass('d-none')
+    $('.generated-invoice').removeClass('d-none')
+    }, 4000); // 4000 milliseconds = 4 seconds
+})
+
+
+
+
+
+
+
+
+//   the highlights slider
+
+window.onload=function(){
+	$('.todays-entries').slick({
+	arrows:true,
+	prevArrow:'<button type="button" class="slick-prev"></button>',
+	nextArrow:'<button type="button" class="slick-next"></button>',
+	centerMode:true,
+	slidesToShow:7,
+	speed: 7000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+	slidesToScroll: 1,
+	pauseOnFocus: true,
+	variableWidth: true
+	});
+  };
