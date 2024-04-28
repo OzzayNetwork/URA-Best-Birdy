@@ -21,7 +21,7 @@ Highcharts.chart('collected-rev', {
     yAxis: {
         min: 0,
         title: {
-            text: 'Amount (KES)'
+            text: 'Amount (UGX)'
         }
     },
     legend: {
@@ -30,74 +30,75 @@ Highcharts.chart('collected-rev', {
     tooltip: {
         shared: true, // Enable shared tooltip
         headerFormat: '<span class="fw-semibold text-uppercase pb-3" style="font-size: 12px">{point.key}</span><br/>',
-        pointFormat: '{series.name}: <b>KES {point.y:,.2f}</b> <br/>'
+        pointFormat: '{series.name}: <b>UGX {point.y:,.2f}</b> <br/>'
     },
     series: [
         {
             name: 'Collected Revenue',
             data: [
                 {
-                    name: 'Kenya Revenue Authority (KRA)',
+                    name: 'Uganda Revenue Authority (URA)',
                     y: 3733,
                     drilldown: 'trade'
                 },
                 {
-                    name: 'Communication Authority of Kenya (CAK)',
+                    name: 'National Water and Sewerage Corporation (NWSC)',
                     y: 3118,
                     drilldown: 'housing'
                 },
                 {
-                    name: ' Kenya Railways Corporation',
+                    name: 'Uganda Electricity Transmission Company Limited (UETCL)',
                     y: 2779,
                     drilldown: 'lands'
                 },
                 {
-                    name: 'Kenya Ports Authority (KPA)',
+                    name: 'Uganda National Roads Authority (UNRA)',
                     y: 2223,
                     drilldown: 'agriculture'
                 },
                 {
-                    name: ' Kenya Power and Lighting Company (KPLC)',
+                    name: 'Uganda Telecom Limited (UTL)',
                     y: 2191,
                     drilldown: 'roads'
                 },
                 {
-                    name: 'Kenya Airports Authority (KAA)	',
+                    name: 'Uganda Civil Aviation Authority (UCAA)',
                     y: 2174,
                     drilldown: 'blue-economy'
                 },
                 {
-                    name: ' Kenya National Highways Authority (KeNHA)',
+                    name: 'Uganda Land Commission (ULC)',
                     y: 2132,
                     drilldown: 'water'
                 },
                 {
-                    name: 'Kenya Airway Cargo',
+                    name: 'Uganda Air Cargo Corporation',
                     y: 2089,
                     drilldown: 'governance'
                 },
                 {
-                    name: 'Kenya Industrial Property Institute (KIPI)',
+                    name: 'Uganda Industrial Research Institute (UIRI)',
                     y: 2067,
                     drilldown: 'finance'
                 },
                 {
-                    name: 'Kenya National Highways Authority (KeNHA)',
+                    name: 'Uganda Investment Authority (UIA)',
                     y: 1911,
                     drilldown: 'youth'
                 },
                 {
-                    name: 'Communication Authority of Kenya (CAK)',
+                    name: 'Uganda Communications Commission (UCC)',
                     y: 1645,
                     drilldown: 'education'
                 },
                 {
-                    name: 'National Environment Management Authority (NEMA)',
+                    name: 'Uganda National Bureau of Standards (UNBS)',
                     y: 1638,
                     drilldown: 'health'
                 },
                 // Add more data points with drilldowns as needed
             ],
+            
             dataLabels: {
                 enabled: true,
                 rotation: -90,
@@ -115,25 +116,26 @@ Highcharts.chart('collected-rev', {
             name: 'Revenue Target',
             type: 'column',
             data: [
-                ['Kenya Revenue Authority (KRA)', 4000],
-                ['Communication Authority of Kenya (CAK)', 3500],
-                [' Kenya Railways Corporation', 3000],
-                ['Kenya Ports Authority (KPA)', 2500],
-                [' Kenya Power and Lighting Company (KPLC)', 2400],
-                ['Kenya Airports Authority (KAA)	', 2300],
-                [' Kenya National Highways Authority (KeNHA)', 2200],
-                ['Kenya Airway Cargo', 2100],
-                ['Kenya Industrial Property Institute (KIPI)', 2000],
-                ['Kenya National Highways Authority (KeNHA)', 1900],
-                ['Communication Authority of Kenya (CAK)', 1800],
-                ['National Environment Management Authority (NEMA)', 1700],
+                ['Uganda Revenue Authority (URA)', 4000],
+                ['National Water and Sewerage Corporation (NWSC)', 3500],
+                ['Uganda Electricity Transmission Company Limited (UETCL)', 3000],
+                ['Uganda National Roads Authority (UNRA)', 2500],
+                ['Uganda Telecom Limited (UTL)', 2400],
+                ['Uganda Civil Aviation Authority (UCAA)', 2300],
+                ['Uganda Land Commission (ULC)', 2200],
+                ['Uganda Air Cargo Corporation', 2100],
+                ['Uganda Industrial Research Institute (UIRI)', 2000],
+                ['Uganda Investment Authority (UIA)', 1900],
+                ['Uganda Communications Commission (UCC)', 1800],
+                ['Uganda National Bureau of Standards (UNBS)', 1700],
                 // Add more target data as needed
             ],
+            
             dataLabels: {
                 enabled: true,
                 color: '#FFFFFF',
                 align: 'center',
-                format: 'KES {point.y:,.2f}',
+                format: 'UGX {point.y:,.2f}',
                 style: {
                     fontSize: '10px',
                     fontFamily: 'Verdana, sans-serif'
