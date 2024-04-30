@@ -648,7 +648,7 @@
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
                                                     <p class="text-muted mb-2">Total Arrears</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
@@ -671,7 +671,7 @@
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
                                                     <p class="text-muted mb-2">Todays Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
@@ -696,7 +696,7 @@
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
                                                     <p class="text-muted mb-2">This mont's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
@@ -721,7 +721,7 @@
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
                                                     <p class="text-muted mb-2">This Year's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
+                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
@@ -763,10 +763,8 @@
                                         <div class="card-header bg-transparent border-bottom">
                                             <div class="">
                                                 <div class="d-flex flex-column">
-                                                    <h4 class="card-title mb-1 text-capitalize">Housing Department
-                                                        Revenue
-                                                        Sources</h4>
-                                                    <p class="sele">Click on a slice in the pie chart to explore revenue
+                                                    <h4 class="card-title mb-1 text-capitalize">In Transit vs. Arrived</h4>
+                                                    <p class="sele d-none">Click on a slice in the pie chart to explore revenue
                                                         sources
                                                         within the housing department.</p>
                                                 </div>
@@ -787,7 +785,7 @@
                                         </div>
 
                                         <div class="card-body">
-                                            <h4 class="card-title mb-0 d-none">Housing Revenue Sources</h4>
+                                            <h4 class="card-title mb-0 d-none"></h4>
                                             <div id="revenueSources"></div>
                                         </div>
                                     </div>
@@ -1053,7 +1051,7 @@
                                                                     Paid</p>
 
                                                             </td>
-                                                            <td class="text-uppercase text-black fw-semibold">KES 25,000
+                                                            <td class="text-uppercase text-black fw-semibold">UGX 25,000
                                                             </td>
 
                                                         </tr>
@@ -1419,27 +1417,27 @@
                                             <tr>
                                                 <td>01</td>
                                                 <td>Rent Deposit</td>
-                                                <td class="text-end">KES 24,500</td>
+                                                <td class="text-end">UGX 24,500</td>
                                             </tr>
 
                                             <tr>
                                                 <td>02</td>
                                                 <td>Monthly Rent</td>
-                                                <td class="text-end">KES 12,000</td>
+                                                <td class="text-end">UGX 12,000</td>
                                             </tr>
 
                                             <tr>
                                                 <td>03</td>
                                                 <td>TAX (18%)</td>
-                                                <td class="text-end">KES 250</td>
+                                                <td class="text-end">UGX 250</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="text-end">Total</td>
-                                                <td class="text-end fw-bold">KES 36,750</td>
+                                                <td class="text-end fw-bold">UGX 36,750</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="text-end">Paid</td>
-                                                <td class="text-end  fw-bold">KES 0.00</td>
+                                                <td class="text-end  fw-bold">UGX 0.00</td>
                                             </tr>
 
                                             <tr>
@@ -1447,7 +1445,7 @@
                                                     <strong>Balance</strong>
                                                 </td>
                                                 <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
+                                                    <h5 class="m-0 text-uppercase fw-bold">UGX 36,750</h5>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1482,7 +1480,7 @@
                                                 <td class="px-3">
                                                     <label for="">Amount To Be Paid</label>
                                                     <input type="text " class="form-control w-100 d-flex"
-                                                        placeholder="KES" spellcheck="false" data-ms-editor="true">
+                                                        placeholder="UGX" spellcheck="false" data-ms-editor="true">
 
                                                 </td>
                                                 <td class="text-right float-right">
@@ -1620,13 +1618,13 @@
         // Function to generate revenue data
         function generateRevenueData() {
             const data = [{
-                name: 'Rentals',
-                y: getRandomValue(500000, 1000000),
+                name: 'On Transait',
+                y: getRandomValue(100, 1000),
                 drilldown: 'rentals'
             }, {
                 name: 'Other Revenue Streams',
-                y: getRandomValue(500000, 1000000),
-                drilldown: 'others'
+                y: getRandomValue(100, 1000),
+                drilldown: 'Arrived'
             }];
             return data;
         }
@@ -1671,7 +1669,7 @@
                 }
             },
             tooltip: {
-                pointFormat: '<b>{point.name}</b>: KES {point.y}'
+                pointFormat: '<b>{point.name}</b>: {point.y} Vehicles'
             },
             series: [{
                 name: 'Collections',
@@ -1680,10 +1678,10 @@
             }],
             drilldown: {
                 series: [{
-                    id: 'rentals',
+                    id: 'On Transit',
                     data: generateDrilldownData().rentals
                 }, {
-                    id: 'others',
+                    id: 'Arrived',
                     data: generateDrilldownData().others
                 }]
             }
@@ -1782,7 +1780,7 @@
                 },
                 yAxis: {
                     title: {
-                        text: 'Revenue (KES)',
+                        text: 'Revenue (UGX)',
                         style: {
                             color: 'white'
                         }
@@ -1804,7 +1802,7 @@
                 },
                 tooltip: {
                     shared: true,
-                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>',
+                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>UGX {point.y}</b><br/>',
                     backgroundColor: '#023382',
                     style: {
                         color: 'white'
@@ -1867,12 +1865,12 @@ Highcharts.chart('StreamRevenueChart', {
     },
     yAxis: {
         title: {
-            text: 'Revenue (KES)'
+            text: 'Revenue (UGX)'
         }
     },
     tooltip: {
         shared: true,
-        valueSuffix: ' KES'
+        valueSuffix: ' UGX'
     },
     plotOptions: {
         column: {
@@ -1938,7 +1936,7 @@ legend: {
         dataLabels: {
             enabled: true,
              inside: true, 
-            format: 'KES {point.y:,.0f}',  // Updated format to include 'KES' and remove decimals
+            format: 'UGX {point.y:,.0f}',  // Updated format to include 'UGX' and remove decimals
             rotation: -90,
             align: 'left',
             verticalAlign: 'middle',
@@ -1956,7 +1954,7 @@ legend: {
 
 tooltip: {
 headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>KES {point.y:,.0f}</b><br/>'
+pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>UGX {point.y:,.0f}</b><br/>'
 },
 
 
@@ -1964,42 +1962,44 @@ series: [
     {
         name: 'Sub County Collections',
         colorByPoint: false,
-        data: [
-            {
-                name: 'MERU TOWN',
-                y:  generateRandomNumber(),
-                drilldown: 'Chrome'
-            },
-            {
-                name: 'BUURI WEST',
-                y:  generateRandomNumber(),
-                drilldown: 'Safari'
-            },
-            {
-                name: 'SOUTH IMENTI',
-                y:  generateRandomNumber(),
-                drilldown: 'Firefox'
-            },
-            {
-                name: 'MAUA TOWN',
-                y:  generateRandomNumber(),
-                drilldown: 'Edge'
-            },
-            {
-                name: 'CENTRAL IMENTI',
-                y:  generateRandomNumber(),
-                drilldown: 'Opera'
-            },
-            {
-                name: 'TIGANIA WEST',
-                y:  generateRandomNumber(),
-                drilldown: 'Internet Explorer'
-            },
-            {
-                name: 'NKUBU TOWN',
-                y: generateRandomNumber(),
-                drilldown: null
-            }
+        data: 
+        [
+        {
+    name: 'Malaba Customs Station',
+    y: generateRandomNumber(),
+    drilldown: 'Chrome'
+},
+{
+    name: 'Busia Customs Station',
+    y: generateRandomNumber(),
+    drilldown: 'Safari'
+},
+{
+    name: 'Entebbe International Airport',
+    y: generateRandomNumber(),
+    drilldown: 'Firefox'
+},
+{
+    name: 'Kampala Customs Headquarters',
+    y: generateRandomNumber(),
+    drilldown: 'Edge'
+},
+{
+    name: 'Elegu',
+    y: generateRandomNumber(),
+    drilldown: 'Opera'
+},
+{
+    name: 'Cyanika',
+    y: generateRandomNumber(),
+    drilldown: 'Internet Explorer'
+},
+{
+    name: 'Others',
+    y: generateRandomNumber(),
+    drilldown: null
+}
+
         ]
     }
 ],
