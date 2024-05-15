@@ -485,13 +485,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Tax Payers Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Filed Returns Report</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item"><a href="#">Filed Returns</a></li>
-                                        <li class="breadcrumb-item active">Tax Payer's Register</li>
+                                        <li class="breadcrumb-item active">Returns Report</li>
                                     </ol>
                                 </div>
 
@@ -502,7 +502,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom ">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                       <div class="flex-grow-1">
@@ -516,10 +516,21 @@
 
                                         <div class="d-flex">
                                             <div class="d-flex align-items-center me-3 pe-3">
-                                                <span class="pr-3 fw-semibold">From:</span>
-                                                <input class="form-control"placeholder="Start date" type="date">
-                                                <span class="px-3 fw-semibold">TO:</span>
-                                                <input class="form-control" placeholder="Start date" type="date">
+                                                <span class="pr-3 fw-semibold">Tax year:</span>
+                                                <select class="form-select">
+                                                    <option>2023</option>
+                                                    <option>2022</option>
+                                                    <option>2024</option>
+                                                    <option>2025</option>
+                                                </select>
+                                                <span class="px-3 fw-semibold">District:</span>
+                                                <select class="form-select">
+                                                    <option>Kampala</option>
+                                                    <option>Wakiso</option>
+                                                    <option>Mbarara</option>
+                                                    <option>Jinja</option>
+                                                    <option>Gulu</option>
+                                                </select>
                                             </div>
                                             <button  data-bs-toggle="modal" data-bs-target=".download-modal" type="button" class="btn btn-primary dropdown-toggle option-selector me-3 text-capitalize">
                                                 <i class="bx bxs-download  font-size-16"></i> <span class="pl-1 d-md-inline">Download Report</span>
@@ -536,131 +547,99 @@
                                 <div class="card-body">
                                     <div class="table-responsive overflow-visible">
 
-                                        <table class="table align-middle table-hover contacts-table table-striped" id="">
+                                        <table class="table align-middle table-hover contacts-table table-striped" id="datatable-buttons">
                                             <thead class="table-light">
                                                 <tr class="table-dark">
-                                                    <th>TIN NO.</th>
-                                                    <th>Date Registered</th>
+                                                    <th>TIN</th>
+                                                    <th>Tax Year</th>
                                                     <th scope="col">Full Names</th>
                                                     <th scope="col">Phone</th>
                                                     <th scope="col">Email</th>
-                                                    <th scope="col">ID/PPT NO.</th>
+                                                    <th scope="col" class="text-right">Total Income</th>
+                                                    <th scope="col" class="text-right">Deductions</th>
+                                                    <th scope="col" class="text-right">Taxable Income</th>
+                                                    <th scope="col" class="text-right">Tax Owed</th>
+                                                    <th scope="col" class="text-right">Tax Payments</th>
+                                                    <th scope="col" class="text-right">Tax Return Status</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
 
                                             <tbody>
                                                 <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>177sfdf886878</strong></td>
-                                                    <td>12 Jan 2024 12:34 AM</td>
-                                                    <td class="text-capitalize text-nowrap">Nabirye Amina</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap">amina@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878998</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>178sfdf786879</strong></td>
-                                                    <td>15 Jan 2024 10:45 AM</td>
-                                                    <td class="text-capitalize text-nowrap">Mukasa Isaac</td>
-                                                    <td class="text-capitalize text-nowrap">0712345678</td>
-                                                    <td class="text-capitalize text-nowrap">isaac@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878999</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>179sfdf786880</strong></td>
-                                                    <td>18 Jan 2024 3:20 PM</td>
-                                                    <td class="text-capitalize text-nowrap">Nalubega Juliet</td>
-                                                    <td class="text-capitalize text-nowrap">0723456789</td>
-                                                    <td class="text-capitalize text-nowrap">juliet@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878997</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>180sfdf786881</strong></td>
-                                                    <td>21 Jan 2024 9:15 AM</td>
-                                                    <td class="text-capitalize text-nowrap">Kato Ronald</td>
-                                                    <td class="text-capitalize text-nowrap">0734567890</td>
-                                                    <td class="text-capitalize text-nowrap">ronald@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878996</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>181sfdf786882</strong></td>
-                                                    <td>25 Jan 2024 2:30 PM</td>
-                                                    <td class="text-capitalize text-nowrap">Nakato Sarah</td>
-                                                    <td class="text-capitalize text-nowrap">0745678901</td>
-                                                    <td class="text-capitalize text-nowrap">sarah@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878995</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-uppercase text-nowrap"><strong>182sfdf786883</strong></td>
-                                                    <td>28 Jan 2024 4:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">Nakato Esther</td>
-                                                    <td class="text-capitalize text-nowrap">0756789012</td>
-                                                    <td class="text-capitalize text-nowrap">esther@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878994</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
                                                     <td class="text-uppercase text-nowrap"><strong>183sfdf786884</strong></td>
-                                                    <td>2 Feb 2024 8:00 AM</td>
+                                                    <td>2023</td>
                                                     <td class="text-capitalize text-nowrap">Ouma Simon</td>
                                                     <td class="text-capitalize text-nowrap">0767890123</td>
                                                     <td class="text-capitalize text-nowrap">simon@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878993</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 90,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 15,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 75,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 15,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 15,000,000</td>
+                                                    <td class="text-right">
+                                                        <span class="badge bg-success">Filled</span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="PrintDocs/TIN Certificate/return-receipt.html" target="new" class="btn btn-primary btn-sm">eReturn Receipt</a>
                                                     </td>
                                                 </tr>
                                                 <tr value="[object Object]">
                                                     <td class="text-uppercase text-nowrap"><strong>184sfdf786885</strong></td>
-                                                    <td>5 Feb 2024 11:20 AM</td>
+                                                    <td>2023</td>
                                                     <td class="text-capitalize text-nowrap">Akello Grace</td>
                                                     <td class="text-capitalize text-nowrap">0778901234</td>
                                                     <td class="text-capitalize text-nowrap">grace@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878992</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 120,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 25,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 95,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 19,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 19,000,000</td>
+                                                    <td class="text-right">
+                                                        <span class="badge bg-success">Filled</span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="PrintDocs/TIN Certificate/return-receipt.html" target="new" class="btn btn-primary btn-sm">eReturn Receipt</a>
                                                     </td>
                                                 </tr>
                                                 <tr value="[object Object]">
                                                     <td class="text-uppercase text-nowrap"><strong>185sfdf786886</strong></td>
-                                                    <td>8 Feb 2024 1:50 PM</td>
+                                                    <td>2023</td>
                                                     <td class="text-capitalize text-nowrap">Wasswa Josephine</td>
                                                     <td class="text-capitalize text-nowrap">0789012345</td>
                                                     <td class="text-capitalize text-nowrap">josephine@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878991</td>
-                                                   <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 180,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 40,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 140,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 28,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 28,000,000</td>
+                                                    <td class="text-right">
+                                                        <span class="badge bg-success">Filled</span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="PrintDocs/TIN Certificate/return-receipt.html" target="new" class="btn btn-primary btn-sm">eReturn Receipt</a>
                                                     </td>
                                                 </tr>
                                                 <tr value="[object Object]">
                                                     <td class="text-uppercase text-nowrap"><strong>186sfdf786887</strong></td>
-                                                    <td>11 Feb 2024 3:40 PM</td>
-                                                    <td class="text-capitalize text-nowrap">Musoke David</td>
+                                                    <td>2023</td>
+                                                    <td class="text-capitalize text-nowrap">Kamya Moses</td>
                                                     <td class="text-capitalize text-nowrap">0790123456</td>
-                                                    <td class="text-capitalize text-nowrap">david@email.com</td>
-                                                    <td class="text-capitalize text-nowrap">76878990</td>
+                                                    <td class="text-capitalize text-nowrap">moses@email.com</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 200,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 35,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 165,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 33,000,000</td>
+                                                    <td class="text-capitalize text-nowrap text-right">UGX 33,000,000</td>
                                                     <td class="text-right">
-                                                        <a href="PrintDocs/TIN Certificate/permit.html" target="new" class="btn btn-primary btn-sm">View Certificate</a>
+                                                        <span class="badge bg-success">Filled</span>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a href="PrintDocs/TIN Certificate/return-receipt.html" target="new" class="btn btn-primary btn-sm">eReturn Receipt</a>
                                                     </td>
                                                 </tr>
                                             </tbody>
+                                            
                                             
                                             
                                         </table>
