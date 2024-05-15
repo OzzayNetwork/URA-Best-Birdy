@@ -256,7 +256,7 @@
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-car-arrow-right"></i>
-                                <span>Vehicle duties</span>
+                                <span>Vehicle Import</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="vehicle-quick-stat.html">Quik Stats</a></li>
@@ -270,7 +270,7 @@
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
                                 <i class="mdi mdi-gas-station"></i>
-                                <span>Fuel Import Duty</span>
+                                <span>Fuel Import</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="fuel-quick-stat.html">Quik Stats</a></li>
@@ -1600,7 +1600,7 @@
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                         <li class="breadcrumb-item active">Institutions</li>
-                                        <li class="breadcrumb-item active">Collections Reports</li>
+                                        <li class="breadcrumb-item active">Institutions Registerd</li>
                                     </ol>
                                 </div>
 
@@ -1616,8 +1616,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div
-                                    class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
 
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center"
                                         role="toolbar">
@@ -1752,237 +1751,172 @@
                                             <thead class="table-light">
                                                 <tr class="table-dark">
                                                     <th class="text-nowrap" scope="col">NO.</th>
-                                                    <th class="text-nowrap" scope="col">Date Invoiced</th>
-                                                    <th class="text-nowrap" scope="col">Invoice No.</th>
-                                                    <th class="text-nowrap" scope="col">Institute</th>
-                                                    <th class="text-nowrap" scope="col">Service(s)</th>
-                                                    <th class="text-nowrap" scope="col">Client</th>
-                                                    <th class="text-nowrap" scope="col">Phone</th>
-                                                    <th class="text-nowrap" scope="col">Payment Mode</th>
-                                                    <th class="text-nowrap" scope="col">Served By</th>
-                                                    <th class="text-nowrap text-right" scope="col">Billed Amount</th>
-                                                    <th class="text-nowrap text-right" scope="col">Amount Paid</th>
-                                                    <th class="text-nowrap text-right" scope="col">Balance</th>
-                                                    <th class="text-nowrap" scope="col">Status</th>
-                                                    <th class="text-nowrap" scope="col">Date Paid</th>
-                                                    <th></th>
+                                                    <th class="text-nowrap" scope="col">Institution</th>
+                                                    <th class="text-nowrap" scope="col">Billing Prefix</th>
+                                                    <th class="text-nowrap" scope="col">Institution category</th>
+                                                    <th>Region</th>
+                                                    <th>District</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">1</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                <tr>
+                                                    <th>2.</th>
+                                                    <td>Uganda Revenue Authority Headquarters</td>
+                                                    <td>URA HQ</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>3.</th>
+                                                    <td>Makerere University</td>
+                                                    <td>MU</td>
+                                                    <td>Public University</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>4.</th>
+                                                    <td>Uganda National Roads Authority (UNRA)</td>
+                                                    <td>UNRA</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Wakiso District</td>
+                                                    <td>Wakiso</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>5.</th>
+                                                    <td>Uganda Electricity Transmission Company Limited (UETCL)</td>
+                                                    <td>UETCL</td>
+                                                    <td>Public Utility</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>6.</th>
+                                                    <td>Bank of Uganda</td>
+                                                    <td>BOU</td>
+                                                    <td>Financial Institution</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
                                                 </tr>
 
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">2</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">3</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">4</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">5</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr value="[object Object]">
-                                                    <td class="text-capitalize text-nowrap">6</td>
-                                                    <td>12 AUg 2023 12:45 PM</td>
-                                                    <td class="text-capitalize text-nowrap">BLL0405010144276</td>
-                                                    <td class="text-capitalize text-nowrap">Mulago National Referral Hospital</td>
-                                                    <td class="text-capitalize text-nowrap">Laboratory fees</td>
-                                                    <td class="text-capitalize text-nowrap">Kelvin Njuguna</td>
-                                                    <td class="text-capitalize text-nowrap">0704549859</td>
-                                                    <td class="text-capitalize text-nowrap"><span class="badge rounded-pill bg-warning text-uppercase" key="t-new">PENDING ...</span></td>
-                                                    <td class="text-capitalize text-nowrap">BENARD OCHIENG SOYO </td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;0.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;15,300.00</span></td>
-                                                     <td><span class="badge badge-soft-danger">UNPAID</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">13 Aug 2024 10:54 AM</span></td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-end"><button
-                                                                class="btn btn-primary btn-sm waves-effect waves-light text-nowrap me-3"
-                                                                data-target="#billDetail" data-toggle="modal" type="button">View Details </button>
-                                                            <div class="dropdown"><a aria-haspopup="true" class="text-muted font-size-16"
-                                                                    data-bs-toggle="dropdown" role="button"><i class="bx bx-dots-vertical-rounded"></i></a>
-                                                                <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item"
-                                                                        data-bs-target=".receipting-modal" data-bs-toggle="modal" href="# "><i
-                                                                            class="font-size-15 mdi mdi-eye me-3"></i>View</a><a class="dropdown-item"
-                                                                        href="# "><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a><a
-                                                                        class="dropdown-item" href="# "><i class="font-size-15 mdi mdi-email me-3"></i>Send
-                                                                        Email Reminder</a><a class="dropdown-item" href="# "><i
-                                                                            class="font-size-15 mdi mdi-chat me-3"></i>Send SMS Reminder</a></div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                               
-                                            </tbody>
-                                            <tfoot class="table-dark">
                                                 <tr>
-                                                    <th class="text-nowrap text-right">10 Bills </th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;750.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;70.00</span></td>
-                                                    <td class="text-nowrap text-right"><span class="fw-semibold">UGX&nbsp;680.00</span></td>
-                                                    <th></th>
-                                                    <th></th>
-                                                    <th></th>
+                                                    <th>7.</th>
+                                                    <td>Uganda Broadcasting Corporation (UBC)</td>
+                                                    <td>UBC</td>
+                                                    <td>Media Organization</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
                                                 </tr>
-                                            </tfoot>
+                                                <tr>
+                                                    <th>8.</th>
+                                                    <td>Uganda Prisons Service</td>
+                                                    <td>UPS</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>9.</th>
+                                                    <td>Uganda Wildlife Authority (UWA)</td>
+                                                    <td>UWA</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>10.</th>
+                                                    <td>Uganda National Examination Board (UNEB)</td>
+                                                    <td>UNEB</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Kampala City</td>
+                                                    <td>Kampala</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>11.</th>
+                                                    <td>Uganda National Roads Authority (UNRA)</td>
+                                                    <td>UNRA</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Lira District</td>
+                                                    <td>Lira</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>12.</th>
+                                                    <td>Uganda Electricity Transmission Company Limited (UETCL)</td>
+                                                    <td>UETCL</td>
+                                                    <td>Public Utility</td>
+                                                    <td>Mbale District</td>
+                                                    <td>Mbale</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>13.</th>
+                                                    <td>Bank of Uganda</td>
+                                                    <td>BOU</td>
+                                                    <td>Financial Institution</td>
+                                                    <td>Mbarara District</td>
+                                                    <td>Mbarara</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>14.</th>
+                                                    <td>Uganda Communications Commission (UCC)</td>
+                                                    <td>UCC</td>
+                                                    <td>Government Regulatory Body</td>
+                                                    <td>Kabarole District</td>
+                                                    <td>Kabarole</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>15.</th>
+                                                    <td>Uganda Investment Authority (UIA)</td>
+                                                    <td>UIA</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Gulu District</td>
+                                                    <td>Gulu</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>16.</th>
+                                                    <td>Uganda Bureau of Statistics (UBOS)</td>
+                                                    <td>UBOS</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Arua District</td>
+                                                    <td>Arua</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th>17.</th>
+                                                    <td>Ministry of Health (MoH)</td>
+                                                    <td>MoH</td>
+                                                    <td>Government Ministry</td>
+                                                    <td>Mukono District</td>
+                                                    <td>Mukono</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>18.</th>
+                                                    <td>Uganda Revenue Authority (URA) - Custom Services</td>
+                                                    <td>URA-CUS</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Jinja District</td>
+                                                    <td>Jinja</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>19.</th>
+                                                    <td>Uganda Investment Authority (UIA) - Free Zones</td>
+                                                    <td>UIA-FZ</td>
+                                                    <td>Government Agency</td>
+                                                    <td>Kisoro District</td>
+                                                    <td>Kisoro</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>20.</th>
+                                                    <td>Uganda Broadcasting Corporation (UBC) - Television License</td>
+                                                    <td>UBC-TV</td>
+                                                    <td>Media Organization</td>
+                                                    <td>Kasese District</td>
+                                                    <td>Kasese</td>
+                                                </tr>
+                                                <!-- Add more rows here -->
+                                            </tbody>
+                                            
+                                            
                                         </table>
                                         <!---->
                                         <!---->

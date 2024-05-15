@@ -130,7 +130,7 @@
         },
 
         title: {
-            text: 'Highcharts Maps basic demo'
+            text: null
         },
 
         subtitle: {
