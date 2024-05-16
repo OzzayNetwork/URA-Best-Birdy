@@ -437,7 +437,7 @@ function initMap() {
 
     //taxi on transit
     addMarker({
-        coords: { lat: -1.284319, lng: 36.8238173 },
+        coords: { lat: 0.2910562127364843,  lng: 32.57371786719585 },
         iconImage: declinedBizApplication,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
@@ -932,7 +932,7 @@ function initMap() {
 
     // Revenue officers
     addMarker({
-        coords: { lat: -1.3289, lng: 36.8452003 },
+        coords: { lat: 0.3156220147555095,lng:  32.578041283161106 },
         iconImage: activeAgent,
         content: `<p class="d-none">agent|plate num</p>
             <h6 class="text-capitalize align-items-center">
@@ -959,7 +959,7 @@ function initMap() {
     //deputy director
 
     addMarker({
-        coords: { lat: -1.3269, lng: 36.8462003 },
+        coords: { lat: 0.31894790366111175, lng: 32.57578820573304 },
         iconImage: activeAgent,
         content: `<p class="d-none">agent|plate num</p>
             <h6 class="text-capitalize align-items-center">
@@ -985,7 +985,7 @@ function initMap() {
 
     //Penalized business a business is penalizewd once they ahaventt renewd their business license by march of that year.
     addMarker({
-        coords: { lat: -1.2974586, lng: 36.8087993 },
+        coords: { lat:0.3208703241113887,lng:  32.57633594090029 },
         iconImage: penalizedBusiness,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
@@ -1072,7 +1072,7 @@ function initMap() {
 
     //active business
     addMarker({
-        coords: { lat: -1.29948, lng: 36.8151453 },
+        coords: { lat:0.3120528011270753,   lng: 32.58296232806844},
         iconImage:activeBusiness,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
@@ -1165,7 +1165,7 @@ function initMap() {
     //to be renewd
 
     addMarker({
-        coords: { lat: -1.294219, lng: 36.806824 },
+        coords: { lat: 0.3083952629789636,  lng: 32.576658587211156 },
         iconImage: toBeRenewed,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
