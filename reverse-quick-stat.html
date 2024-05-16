@@ -1,0 +1,1853 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- index.html   13:53:02 GMT -->
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>URA | Uganda Revenue Authority</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Rental management system by Nouveta LTD" name="description" />
+    <meta content="Kelvin Njuguna" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/URA_logo.png">
+    <!-- droping file -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="assets/libs/owl.carousel/assets/owl.theme.default.min.css">
+
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page -->
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box"><a class="logo logo-dark"><span class="logo-sm"><img alt="" height="22"
+                            src="./assets/images/logo.svg"></span><span class="logo-lg"></span></a><a
+                    class="logo logo-light d-flex"><span class="logo-sm"><img alt="" height="50"
+                            src="./logos/county_logo.png"></span><span class="logo-lg"><img alt="" height="45"
+                            src="assets/images/the-logo.png"></span>
+                    <div class="portal-title">
+                        <h4 class="text-white">URA</h4>
+                        <h6 class="text-muted mb-0 text-white opacity-75 fs-10">Uganda Revenue Authority</h6>
+                    </div>
+                </a></div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- logo small -->
+                    <div class="phone-logo d-md-none d-sm-flex"> <img src="assets/images/color-log0.svg" alt=""
+                            class="img"></div>
+
+
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form>
+
+
+                </div>
+
+                <div class="d-flex">
+                    <!-- small search -->
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            data-bs-toggle="fullscreen">
+                            <i class="bx bx-fullscreen"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block d-none">
+
+                        <!-- notifications, i will come to this later -->
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="bx bx-bell bx-tada"></i>
+                            <span class="badge bg-danger rounded-pill">3</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small" key="t-view-all"> View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                <i class="bx bx-cart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the
+                                                    grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                        key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.
+                                                </p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                        key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                <i class="bx bx-badge-check"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the
+                                                    grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                        key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-4.jpg"
+                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of
+                                                    mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
+                                                        key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View
+                                        More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1" key="t-henry">Adroa Balinda</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="myprofile.html"><i
+                                    class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My
+                                    Profile</span></a>
+                            <a class="dropdown-item" href="my-logs.html"><i
+                                    class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My
+                                    Logs</span></a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i
+                                    class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span
+                                    key="t-lock-screen">Lock screen</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="auth-login.html"><i
+                                    class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
+                                    key="t-logout">Logout</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+            <div data-simplebar class="h-100">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
+                        <li class="menu-title" key="t-pages">URA Tax Billing & Mngt portal</li>
+                        <li class="side-bar-button">
+                            <a href="bill-new.html"
+                                class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
+                                <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
+                                <span class="text-capitalize">Create A Bill</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="bx bx-home-circle"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="menu-title" key="t-pages">Import & Export</li>                        
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-car-arrow-right"></i>
+                                <span>Vehicle Import</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="vehicle-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="vehicle-clearance.html">Vehicle Clearance</a></li>
+                                <li><a href="vehicle-reports.html">Collections Reports</a></li>
+                                <li><a href="vehicle-tracking.html">Vehicles Tracking</a></li>
+                                <li><a href="vehicle-collections-services.html">Charges & Services</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-gas-station"></i>
+                                <span>Fuel Import</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="fuel-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="fuel-clearance.html">Fuel Clerance</a></li>
+                                <li><a href="fuel-reports.html">Collections Report</a></li>
+                                <li><a href="fuel-collections-services.html">Charges & Services</a></li>
+                                
+                            </ul>
+                        </li>
+                          <li class="menu-title" key="t-pages">Domestic Taxes</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-account-cash"></i>
+                                <span>Filed Returns</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="returns-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="returns-taxpayers-register.html">Taxpayers Register</a></li>
+                                <li><a href="returns-report.html">Filled Returns</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-point-of-sale"></i>
+                                <span>Reverse Sales Taxes</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="reverse-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="reverse-report.html">Reverse Tax Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="dripicons-tags"></i>
+                                <span>VAT Taxes</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="vat-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="vat-reports.html">Fuel Clerance</a></li>
+                               
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="rental-tax.html" class="waves-effect">
+                                <i class="mdi mdi-home-city"></i><span>Residential Rental Income</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="capital-tax.html" class="waves-effect">
+                                <i class="mdi mdi-chart-areaspline"></i><span>Capital Gains Tax (CGT)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="turnover-tax.html" class="waves-effect">
+                                <i class="mdi mdi-arrow-right-circle-outline"></i><span>Turnover Tax</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="advance-tax.html" class="waves-effect">
+                                <i class="mdi mdi-calendar-clock"></i><span>Advance Tax</span>
+                            </a>
+                        </li>
+
+
+                         <li class="menu-title" key="t-pages">Institutional Taxes</li>
+                        <li>
+                            <a href="intitute-register.html" class="waves-effect">
+                                <i class="mdi mdi-format-align-justify"></i><span>Institutions Register</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-office-building-marker"></i>
+                                <span>Institutions</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="institute-quick-stat.html">Quik Stats</a></li>
+                                <li><a href="institute-invoice-generate.html">Generate Invoice</a></li>
+                                <li><a href="institutes-collections-reports.html">Collections Reports</a></li>
+                                <li><a href="institutes-add-new.html">Add Insitute</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="menu-title" key="t-pages">Minicpality Services</li>
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi-certificate mdi"></i>
+                                <span>Certificates & Licenses</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="cert-biz-stats.html">Business Permits</a></li>
+                                <li><a href="cert-food.html">Food handlers certificate</a></li>
+                                <li><a href="food-hygine.html">Food Hygiene Certificate</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-sail-boat"></i>
+                                <span>Blue Economy</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="blue-quick-stat.html">Quick Stats</a></li>
+                                <li><a href="blue-boat-register.html">Boat Register</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-home-circle"></i>
+                                <span>Housing</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="housing-quick-stat.html">Quick Stats</a></li>
+                                <li><a href="housing-register.html">Rentals Register</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-car-back"></i>
+                                <span>Parking </span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="parking-stats.html">Quick Stats</a></li>
+                                <li><a href="parking-fleet.html">Fleet Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-title" key="t-pages">General Reports</li>
+                        <li class="">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-receipt"></i>
+                                <span>Bills</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="bills-raised.html">Bills raised</a></li>
+                                <li><a href="bills-receipted.html">Receipted Bills</a></li>
+                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="live-monitoring.html" class="waves-effect">
+                                <i class="bx bx-user-voice"></i><span>Live Monitoring</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-file"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu text-capitalize" aria-expanded="false">
+                                <li><a href="reports-subconty.html">Collections By  County</a></li>
+                                <li class=""><a href="reports-streams.html">Revenue Streams Collections</a></li>
+                                <li class=""><a href="reports-zones.html">Collection Zones</a></li>
+                                <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
+                                <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-receipt"></i>
+                                <span>Payments & Receipting </span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="receipts-new.html">Receive Payment</a></li>
+                                <li><a href="receipts.html">View Receipts</a></li>
+                            </ul>
+                        </li>                   
+
+                        <li class="d-none">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-map-marker-radius"></i>
+                                <span>Businesses Mapping</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="business-analytics.html">Analytics</a></li>
+                                <li><a href="business-mapping.html">Live Map</a></li>
+                                <li><a href="business-data.html">Business Register</a></li>
+                                <li><a href="business-data-archive.html">Archived Records</a></li>
+                                <li><a href="business-data-colectors.html">Data Collectors</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-title" key="t-pages">Settings & Setups</li>
+                        <li>
+                            <a href="zone-location.html" class="waves-effect">
+                                <i class="mdi mdi-map"></i><span>Collection Zones</span>
+                            </a>
+                        </li>                        
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow text-capitalize">
+                                <i class="dripicons-flag"></i>
+                                <span>Action Center</span>
+                                <span class="badge rounded-pill bg-danger float-end">10</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="flagged-payments.html">unmatched transactions</a></li>
+                                <li><a href="flagged-awaiting.html">Awaiting Receipting</a></li>
+                                <li><a href="flagged-mannualy.html">Mannualy Receipted Transactions </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="finance-act.html" class="waves-effect">
+                                <i class="mdi mdi-currency-usd"></i><span>Finance act</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="bx bx-slider"></i>
+                                <span>Settings & Setups</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="finance-act.html">Finance atc</a></li>
+                                <li><a href="set-rentals.html">Rentals</a></li>
+                                <li><a href="set-targets.html">Revenue Targets</a></li>
+                                <li><a href="set-assets.html">County Assets</a></li>
+                                <li><a href="set-accounts.html">User Accounts</a></li>
+                                <li><a href="revenue-streams.html">Revenue Streams</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-monitor-multiple"></i>
+                                <span>System Users</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="user-userlist.html">System Users</a></li>
+                                <li><a href="user-registration.html">Add a system user</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-title d-none" key="t-pages">Market Stalls & Rentals</li>                        
+                        <li class="menu-title d-none" key="t-pages">
+                            <hr />
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Reverse Tax Quick Stats</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Tax Returns</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Quick Stats</a></li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                  <!-- tool bar -->
+                  <div class="row d-none">
+                    <div class="col-12 active">
+                        <div class="card active">
+                            <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
+                                <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
+                                    <button
+                                        class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
+                                        type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="mdi mdi-menu"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
+                                        <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="institute-quick-stat.html">Quick Stats</a>
+                                                <a class="nav-item nav-link" href="institute-invoice-generate.html">Create Invoice</a>
+                                                <a class="nav-item nav-link" href="institutes-collections-reports.html">Collections Reports</a>
+                                                <a class="nav-item nav-link" href="institutes-collections-services.html">Charges & Services</a>
+                                                <a class="nav-item nav-link" href="institutes-add-new.html">Add Institute</a>
+                                                
+                                            </div>
+
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">Add Institution Category</button>
+                                          </form>
+                                        
+
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                    </div>
+                    <!-- end of toolbar -->
+                    <div class="row">
+                        <div class="col-lg-12 px-sm-30px d-none">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-12 align-self-center text-capitalize">
+                                            <div class="text-lg-left mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                        <i class="mdi mdi-briefcase-edit text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Identified Outlets</p>
+                                                            <h5 class="mb-0">2000</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle font-size-16">
+                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Application Invoices</p>
+                                                            <h5 class="mb-0">1500</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Ongoing Inspection</p>
+                                                            <h5 class="mb-0">180</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Certification Invoices</p>
+                                                            <h5 class="mb-0">1320</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-warning font-size-16">
+                                                                        <i class="mdi mdi-close text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Awaiting Approval</p>
+                                                            <h5 class="mb-0">22</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
+                                                                        <i class="mdi mdi-clock-alert text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Active Certificates</p>
+                                                            <h5 class="mb-0">48</h5>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 px-sm-30px">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">Registered Tax Payers</p>
+                                                    <h5 class="mb-0 fw-bold">250,000</h5>
+                                                </div>
+                        
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-danger font-size-20">
+                                                        <i class="mdi mdi-account-cash"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0">180,000 Active</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">Today's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">UGX 150,000,000</h5>
+                                                </div>
+                        
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-text-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            From 100 Tax Payers
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">This Month's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">UGX 1,500,000,000</h5>
+                                                </div>
+                        
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-month-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 12.5%</span> Target Margin</p>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3">
+                                    <div class="card mini-stats-wid">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-wrap">
+                                                <div class="me-3">
+                                                    <p class="text-muted mb-2">This Year's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">UGX 15,000,000,000</h5>
+                                                </div>
+                        
+                                                <div class="avatar-sm ms-auto">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                        <i class="mdi mdi-calendar-check-outline "></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body border-top py-3">
+                                            From 200 Tax Payers
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-sm-12 col-md-5 px-sm-30px">
+                            <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <div class="d-sm-flex flex-wrap">
+                                        <h4 class="card-title mb-4">Collections By Region</h4>
+                                        <div class="ms-auto">
+                                            <a href="javascript:void(0);" class="btn btn-primary"><i class="bx bx-plus align-middle"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div>
+                                        <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
+                                            <table class="table table-striped table-sm font-12 verticle-middle">
+                                                <thead class="table-dark">
+                                                    <tr class="font-weight-bold">
+                                                        <th scope="col" rowspan="2">Region</th>
+                                                        <th c>Tax Payers</th>
+                                                        <th scope="col" class="text-right" colspan="2">Realized Revenue</th>
+                                                    </tr>
+                                                   
+                                                </thead>
+                                                <tbody>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Kampala City</td>
+                                                        <td class="rNorth-alcohol">100</td>
+                                                        <td class="text-right">UGX 10,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Wakiso District</td>
+                                                        <td class="rNorth-alcohol">150</td>
+                                                        <td class="text-right">UGX 15,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Mbarara Municipality</td>
+                                                        <td class="rNorth-alcohol">80</td>
+                                                        <td class="text-right">UGX 8,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Jinja Town</td>
+                                                        <td class="rNorth-alcohol">120</td>
+                                                        <td class="text-right">UGX 12,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Gulu Municipality</td>
+                                                        <td class="rNorth-alcohol">70</td>
+                                                        <td class="text-right">UGX 7,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Mbale Town</td>
+                                                        <td class="rNorth-alcohol">85</td>
+                                                        <td class="text-right">UGX 8,500,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Fort Portal Municipality</td>
+                                                        <td class="rNorth-alcohol">60</td>
+                                                        <td class="text-right">UGX 6,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Entebbe Municipality</td>
+                                                        <td class="rNorth-alcohol">55</td>
+                                                        <td class="text-right">UGX 5,500,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Kasese Town</td>
+                                                        <td class="rNorth-alcohol">45</td>
+                                                        <td class="text-right">UGX 4,500,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Masindi Town</td>
+                                                        <td class="rNorth-alcohol">30</td>
+                                                        <td class="text-right">UGX 3,000,000</td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">Arua Municipality</td>
+                                                        <td class="rNorth-alcohol">50</td>
+                                                        <td class="text-right">UGX 5,000,000</td>
+                                                    </tr>
+                                                    <!-- Add more rows here -->
+                                                </tbody>
+                                                
+                                                
+                                                <tfoot>
+                                                   <tr>
+                                                        <th>11 Regions</th>
+                                                        <th>349</th>
+                                                        <th class="text-right"> UGX 456,789,000</th>
+                                                   </tr>
+                                                </tfoot>
+                                            </table>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+                        <div class="col-sm-12 col-md-7 px-sm-30px">
+                            <div class="card">
+
+                                <div class="card-header bg-white border-bottom">
+                                    <h4 class="card-title">Revenue Perfomance</h4>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div id="revenuePerfomanceFire"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- end row -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <!-- receipting modal -->
+            <div class="modal fade receipting-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered modal-full modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Business Details</h5>
+                            <span
+                                class="badge rounded-pill bg-success text-uppercase font-12px text-uppercase mx-3">Active
+                                Certificate</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="hori-timeline mt-4">
+                                        <div class="owl-carousel owl-theme  navs-carousel events timeline-carousel"
+                                            id="timeline-carousel">
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">12 Sep 2023 10:09 AM</div>
+                                                        <h5 class="mb-4">Application</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">Kelvin Omondi</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">15 Sep 2023 12:59 AM</div>
+                                                        <h5 class="mb-4">Details Verification</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">By Kelvin Ouma</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">20 Sep 2023 08:23 AM</div>
+                                                        <h5 class="mb-4">Premices Inspection</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">By Alex Kinoti</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">23 sep 2023 08:23 AM</div>
+                                                        <h5 class="mb-4">Approval Of Application</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">By John King</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">23 sep 2023 08:25 AM</div>
+                                                        <h5 class="mb-4">issueance Of Certifcate</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bxs-check-circle h1 text-success down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">By John King</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="item event-list active">
+                                                <div>
+                                                    <div class="event-date">
+                                                        <div class="text-primary mb-1">By 31 Dec 2023 12:00 AM</div>
+                                                        <h5 class="mb-4">Renewal</h5>
+                                                    </div>
+                                                    <div class="event-down-icon">
+                                                        <i
+                                                            class="bx bx-down-arrow-circle h1 text-info down-arrow-icon"></i>
+                                                    </div>
+
+                                                    <div class="mt-3 px-3">
+                                                        <p class="text-muted text-capitalize"><a
+                                                                href="user-details.html">-</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-success border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bx-certification font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Certificate details</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Serial
+                                                                    No.</p>
+                                                            </td>
+                                                            <td class="">12345</td>
+
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Last Paid for</p>
+                                                            </td>
+                                                            <td class="">12 Jan 2023</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Expiry
+                                                                    Date</p>
+
+                                                            </td>
+                                                            <td class="">31 Dec 2023</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Days
+                                                                    to expiry</p>
+
+                                                            </td>
+                                                            <td class="">204 Days</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Printing status</p>
+
+                                                            </td>
+                                                            <td class="">Printed</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Amount
+                                                                    Paid</p>
+
+                                                            </td>
+                                                            <td class="text-uppercase text-black fw-semibold">UGX 25,000
+                                                            </td>
+
+                                                        </tr>
+
+
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-info border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bx-briefcase-alt-2 font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Business Details</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business
+                                                                    Name</p>
+                                                            </td>
+                                                            <td class="">Wireless Electronics</td>
+
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Certificate of Incoporation No. </p>
+                                                            </td>
+                                                            <td class="">1234557768</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">KRA
+                                                                    Pin
+                                                                    No.</p>
+
+                                                            </td>
+                                                            <td class="">12345</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">VAT
+                                                                    No.
+                                                                </p>
+
+                                                            </td>
+                                                            <td class="">12345</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business
+                                                                    Activity</p>
+
+                                                            </td>
+                                                            <td class="">Accomodation and Catering</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business
+                                                                    Sub category</p>
+
+                                                            </td>
+                                                            <td class="">Small Lodging House</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-warning border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bxs-user-pin font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Owner Details</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Owner's Full Names</p>
+                                                            </td>
+                                                            <td class="">Mr Alex Wanjala Akinyi</td>
+
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    ID/PPT No.</p>
+                                                            </td>
+                                                            <td class="">1234557768</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Owner's Fax</p>
+
+                                                            </td>
+                                                            <td class="">12345</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Owner's Mobile No.</p>
+
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Alternative Mobile No.</p>
+
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
+
+                                                        </tr>
+
+
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Postal
+                                                                    Address</p>
+
+                                                            </td>
+                                                            <td class="">12-1004 Nairobi</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-4">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-danger border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bx-phone-call pin font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Location and Contact information</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+                                                <table
+                                                    class="table table-nowrap vertical-align-middle table-striped table-sm">
+                                                    <tbody>
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business Mobile No.</p>
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
+
+                                                        </tr>
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Alternative Phone No</p>
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">0704549859</a></td>
+
+                                                        </tr>
+
+
+
+                                                        <tr
+                                                            title="Driving Without identification plates affixed or plates not fixed in the prescribed manner">
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Business Email address</p>
+                                                            </td>
+                                                            <td class=""><a
+                                                                    href="mailto:email@email.com">email@email.com</a>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold"> Sub
+                                                                    county</p>
+
+                                                            </td>
+                                                            <td class="">Homabay Town Sub county</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">Ward
+                                                                </p>
+
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">Rodi Township Ward</a>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Physical address/Street</p>
+
+                                                            </td>
+                                                            <td class=""><a href="tel:0704549859">Along Moi Avenue
+                                                                    opposite cooperative Bank</a></td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Building Name</p>
+
+                                                            </td>
+                                                            <td class="">ALexis complex</td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>
+                                                                <p class="the-bill-item mb-0 p-0 m-0 fw-semibold">
+                                                                    Stall/Room No.</p>
+
+                                                            </td>
+                                                            <td class="">122</td>
+
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="col-sm-12 col-md-8">
+                                    <div class="row">
+                                        <div class="col-12 mt-4">
+                                            <div class="bg-dark border-2 bg-soft p-2 mb-4 d-flex align-items-center">
+                                                <i class="bx bx-map font-28 mr-15px"></i>
+                                                <p class="fw-semibold mb-0 pb-0">Map View</p>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+
+                            <a href="PrintDocs/Trade-Permit/permit.html" target="_blank" type="button"
+                                class="btn btn-primary waves-effect waves-light">
+                                <i class="mdi mdi-printer font-size-16 align-middle me-2"></i> Print Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of receipting modal -->
+
+            <!-- invoice details -->
+            <div class="modal fade invoice-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="myLargeModalLabel">Invoice Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-12">
+                                <address>
+                                    <strong>Billed To:</strong><br>
+                                    Kelvin Njuguna<br>
+                                    email@mail.com, 0704 549 859<br>
+                                    Hse No. 410, 90 Degrees By Tsavo
+                                    <br><br>
+                                    1 Mar 2022, 10:20 AM
+                                </address>
+                            </div>
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Invoice Details ( <span
+                                            class="text-primary fw-medium">No. 1237</span> )</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 70px;">No.</th>
+                                                <th>Item</th>
+                                                <th class="text-end">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Rent Deposit</td>
+                                                <td class="text-end">UGX 24,500</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>02</td>
+                                                <td>Monthly Rent</td>
+                                                <td class="text-end">UGX 12,000</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>03</td>
+                                                <td>TAX (18%)</td>
+                                                <td class="text-end">UGX 250</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Total</td>
+                                                <td class="text-end fw-bold">UGX 36,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="text-end">Paid</td>
+                                                <td class="text-end  fw-bold">UGX 0.00</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="2" class="border-0 text-end">
+                                                    <strong>Balance</strong>
+                                                </td>
+                                                <td class="border-0 text-end">
+                                                    <h5 class="m-0 text-uppercase fw-bold">UGX 36,750</h5>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-12 d-none">
+                                <div class="table-resposive p-4 px-2 pt-2 overflow-visible">
+                                    <table class="w-100">
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td>
+                                                    <label for="" class="">Payment Method</label>
+                                                    <select class="form-control selectpicker w-100 payment-method"
+                                                        data-style="btn-secondary w-100" data-live-search="true"
+                                                        title="Select payment Method">
+                                                        <option value="Mpesa">MPESA</option>
+                                                        <option value="Cash">CASH</option>
+                                                    </select>
+                                                </td>
+                                                <td class="px-3 ">
+                                                    <div class="phone-num d-none">
+                                                        <label for="">Phone No.</label>
+                                                        <input type="text " class="form-control w-100 d-flex "
+                                                            placeholder="Phone No." spellcheck="false"
+                                                            data-ms-editor="true">
+                                                    </div>
+
+                                                </td>
+                                                <td class="px-3">
+                                                    <label for="">Amount To Be Paid</label>
+                                                    <input type="text " class="form-control w-100 d-flex"
+                                                        placeholder="UGX" spellcheck="false" data-ms-editor="true">
+
+                                                </td>
+                                                <td class="text-right float-right">
+                                                    <div class="d-flex flex-column">
+                                                        <label class="opacity-0">Something</label>
+                                                        <a href="#"
+                                                            class="btn btn-primary w-md waves-effect waves-light">Submit</a>
+                                                    </div>
+                                                </td>
+
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="float-end">
+                                <a href="javascript:window.print()"
+                                    class="btn btn-success waves-effect waves-light me-1"><i
+                                        class="mdi mdi-printer font-16px"></i></a>
+                                <a href="javascript: void(0);"
+                                    class="btn btn-primary w-md waves-effect waves-light">Receive Payment</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- invoice details -->
+
+            <!-- Bill creation modal -->
+            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Institution Categories</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                        <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Institution Categories Register</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits">
+                                        <thead class="table-light">
+                                            <tr class="text-uppercase table-dark">
+                                                <th>#</th>
+                                                <th>Category</th>                                                
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">1.</td>
+                                                <td class="">
+                                                    Schools
+                                                </td> 
+                                            </tr>
+
+                                            <tr data-id="1">
+                                                <td style="width: 80px">2.</td>
+                                                <td class="">
+                                                    Hospitals
+                                                </td> 
+                                            </tr>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">3.</td>
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                            </tr>
+
+                                            <tr class="cloneCharges d-none">
+                                                <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                    <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Category</span></span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                       </div>
+
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of bill creation modal -->
+
+
+            <footer class="footer ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Best Birdy
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="text-sm-end d-sm-block ">
+                                County Billing System
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay "></div>
+
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+    <script src="assets/libs/simplebar/simplebar.min.js "></script>
+    <script src="assets/libs/node-waves/waves.min.js "></script>
+
+
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js "></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js "></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js "></script>
+    <script src="assets/libs/jszip/jszip.min.js "></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js "></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
+
+    <!-- highchart cdns -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+
+    <!-- highchart drill down -->
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
+
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+    <!-- Plugins js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js "></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js "></script>
+
+    <!-- owl.carousel js -->
+    <script src="assets/libs/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- timeline init js -->
+    <script src="assets/js/pages/timeline.init.js"></script>
+
+     <!-- Application statuses -->
+     <script src="assets/js/pages/applicationStatuses.js"></script>
+
+     <!-- revenue perfomance -->
+     <script src="assets/js/pages/revenuePwerfomance.js"></script>
+
+     <!-- active vs expired certificats -->
+     <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+     <!-- Table Editable plugin -->
+     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+     <script src="assets/js/pages/table-editable.int.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js "></script>
+    <script src="assets/js/custom.js "></script>
+
+    <script>
+        // Your chart generation code will go here
+document.addEventListener('DOMContentLoaded', function () {
+    // Abbreviate months to three letters
+    function abbreviateMonth(month) {
+        return month.substring(0, 3);
+    }
+    
+    // Prepare the data
+    const data = [
+        ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
+        ['Aug 2023', 55000, 62000, 58000],
+        ['Sep 2023', 52000, 61000, 56000],
+        ['Oct 2023', 53000, 63000, 57000],
+        ['Nov 2023', 54000, 59000, 56000],
+        ['Dec 2023', 60000, 65000, 62000],
+        ['Jan 2024', 58000, 67000, 59000],
+        ['Feb 2024', 59000, 68000, 60000],
+        ['Mar 2024', 61000, 70000, 62000],
+        ['Apr 2024', 60000, 69000, 61000],
+        ['May 2024', 62000, 72000, 63000],
+        ['Jun 2024', 63000, 71000, 64000]
+    ];
+
+    // Set the font family to Montserrat
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Montserrat, sans-serif'
+            }
+        }
+    });
+
+    // Create the bar chart
+    Highcharts.chart('revenuePerfomanceFire', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: data.map(item => abbreviateMonth(item[0]))
+        },
+        yAxis: {
+            title: {
+                text: 'Revenue (UGX)'
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        tooltip: {
+            shared: true,
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>UGX {point.y}</b><br/>'
+        },
+        plotOptions: {
+            bar: {
+                pointWidth: 20, // Adjust the width of each column
+                stacking: 'normal', // Prevent stacking
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Last Year Collections',
+            data: data.map(item => item[1])
+        }, {
+            name: 'Created Invoices',
+            data: data.map(item => item[2]),
+            color:"red"
+        }, {
+            name: 'This Year Collections',
+            data: data.map(item => item[3]),
+            color:"green"
+        }]
+    });
+});
+
+    </script>
+</body>
+
+
+<!-- index.html   13:55:49 GMT -->
+
+</html>
