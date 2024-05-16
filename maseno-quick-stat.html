@@ -7,13 +7,12 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Desk Birdy | Parking Quick Stats</title>
+    <title>URA | Uganda Revenue Authority</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Rental management system by Nouveta LTD" name="description" />
     <meta content="Kelvin Njuguna" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/URA_logo.png">
-
     <!-- droping file -->
     <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
@@ -578,15 +577,15 @@
                 <div class="container-fluid">
 
                     <!-- start page title -->
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Quick Stats</h4>
+                                <h4 class="mb-sm-0 font-size-18">Institutions Taxes</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Vehicle Duty</a></li>
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Institutions Taxes</a></li>
                                         <li class="breadcrumb-item"><a href="#">Quick Stats</a></li>
                                     </ol>
                                 </div>
@@ -596,124 +595,128 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- tool bar -->
-                    <div class="row">
-                        <div class="col-12 active">
-                            <div class="card active">
-                                <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
-                                    <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
-                                        <button
-                                            class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
-                                            type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                                            aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                                            aria-label="Toggle navigation">
-                                            <span class="mdi mdi-menu"></span>
-                                        </button>
-                                        <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
-                                            <div class="navbar-nav">
-                                                    <a class="nav-item nav-link" href="vehicle-quick-stat.html">Quick Stats</a>
-                                                    <a class="nav-item nav-link" href="vehicle-reports.html">Collections Reports</a>
-                                                    <a class="nav-item nav-link" href="vehicle-tracking.html">Vehicles Tracking</a>
-                                                    <a class="nav-item nav-link" href="vehicle-collections-services.html">Charges & Services</a>                                                
-                                                </div>
-    
-                                            <form class="form-inline my-2 my-lg-0">
-                                                <a type="button" href="vehicle-clearance.html"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" >Clear A vehicle</a>
-                                              </form>
-                                            
-    
-                                        </div>
-                                    </nav>
-                                </div>
+                  <!-- tool bar -->
+                  <div class="row">
+                    <div class="col-12 active">
+                        <div class="card active">
+                            <div class="card-body mini-nav bg-primary pt-2 pb-3 active ">
+                                <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary py-2 active">
+                                    <button
+                                        class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary"
+                                        type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span class="mdi mdi-menu"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse justify-content-between active" id="navbarNavAltMarkup">
+                                        <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="maseno-quick-stat.html">Quick Stats</a>
+                                                <a class="nav-item nav-link" href="maseno-invoice-generate.html">Create Invoice</a>
+                                                <a class="nav-item nav-link" href="maseno-collections-reports.html">Collections Reports</a>
+                                                <a class="nav-item nav-link" href="maseno-collections-services.html">Charges & Services</a>
+                                                <a class="nav-item nav-link" href="institutes-add-new.html">Add Institute</a>
+                                                
+                                            </div>
+
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <button type="button"  class="btn btn-info waves-effect waves-light my-2 my-sm-0 text-uppercase" data-toggle="modal" data-target=".new-alcohol-application">Add Institution Category</button>
+                                          </form>
+                                        
+
+                                    </div>
+                                </nav>
                             </div>
-    
                         </div>
-                        </div>
+
+                    </div>
+                    </div>
                     <!-- end of toolbar -->
                     <div class="row">
                         <div class="col-lg-12 px-sm-30px">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-
+                                       
                                         <div class="col-sm-12 align-self-center text-capitalize">
                                             <div class="text-lg-left mt-4 mt-lg-0">
                                                 <div class="row">
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-info font-size-16">
+                                                                        <i class="mdi mdi-briefcase-edit text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Identified Outlets</p>
+                                                            <h5 class="mb-0">2000</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle font-size-16">
+                                                                        <i class="mdi mdi mdi-briefcase-check text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Application Invoices</p>
+                                                            <h5 class="mb-0">1500</h5>
+                                                        </div>
+                                                    </div>
                                                     <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
-                                                                <span
-                                                                    class="avatar-title rounded-circle bg-warning font-size-16">
-                                                                    <i class="mdi mdi-close text-white"></i>
-                                                                </span>
+                                                                <span class="avatar-title rounded-circle bg-pink font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2">Vehicles on Transit</p>
+                                                            <p class="text-muted text-truncate mb-2">Ongoing Inspection</p>
+                                                            <h5 class="mb-0">180</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-whatsApp font-size-16">
+                                                                        <i class="mdi mdi-progress-clock text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Pending Certification Invoices</p>
+                                                            <h5 class="mb-0">1320</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                        <div>
+                                                            <div class="avatar-xs mb-3">
+                                                                <span class="avatar-title rounded-circle bg-warning font-size-16">
+                                                                        <i class="mdi mdi-close text-white"></i>
+                                                                    </span>
+                                                            </div>
+                                                            <p class="text-muted text-truncate mb-2">Awaiting Approval</p>
                                                             <h5 class="mb-0">22</h5>
 
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
+                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
                                                         <div>
                                                             <div class="avatar-xs mb-3">
-                                                                <span
-                                                                    class="avatar-title rounded-circle bg-info font-size-16">
-                                                                    <i
-                                                                        class="mdi-file-document-edit-outline mdi text-white"></i>
-                                                                </span>
+                                                                <span class="avatar-title rounded-circle bg-danger font-size-16">
+                                                                        <i class="mdi mdi-clock-alert text-white"></i>
+                                                                    </span>
                                                             </div>
-                                                            <p class="text-muted text-truncate mb-2 text-capitalize">
-                                                                Rentals</p>
+                                                            <p class="text-muted text-truncate mb-2">Active Certificates</p>
                                                             <h5 class="mb-0">48</h5>
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-sm-6 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span class="avatar-title rounded-circle font-size-16">
-                                                                    <i class="bx bxs-ship text-white"></i>
-                                                                </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Tenants</p>
-                                                            <h5 class="mb-0">6,503</h5>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span
-                                                                    class="avatar-title rounded-circle bg-pink font-size-16">
-                                                                    <i class="mdi mdi-progress-clock text-white"></i>
-                                                                </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Compliant Tenants
-                                                            </p>
-                                                            <h5 class="mb-0">180</h5>
-
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-12 col-md-2 col-lg-2 mb-5 mb-md-0">
-                                                        <div>
-                                                            <div class="avatar-xs mb-3">
-                                                                <span
-                                                                    class="avatar-title rounded-circle bg-whatsApp font-size-16">
-                                                                    <i class="mdi mdi-progress-clock text-white"></i>
-                                                                </span>
-                                                            </div>
-                                                            <p class="text-muted text-truncate mb-2">Tenants with
-                                                                arrears</p>
-                                                            <h5 class="mb-0">56</h5>
-
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
 
-
+                                      
 
                                     </div>
                                     <!-- end row -->
@@ -728,200 +731,244 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">Total Arrears</p>
-                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
+                                                    <p class="text-muted mb-2">Value of Pending Invoices</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-danger font-size-20">
+                                                    <div class="avatar-title bg-light rounded-circle text-danger font-size-20">
                                                         <i class="mdi mdi-account-cash"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-body border-top py-3">
-                                            <p class="mb-0"> From 34 Tenats</p>
+                                            <p class="mb-0"> From 34 Businesses</p>
                                         </div>
                                     </div>
-                                </div>
-                                <!--end col-->
+                                </div><!--end col-->
                                 <div class="col-lg-3">
                                     <div class="card mini-stats-wid">
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">Todays Collections</p>
-                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
+                                                    <p class="text-muted mb-2">Today's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
                                                         <i class="mdi mdi-calendar-text-outline "></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i
-                                                        class="bx bx-trending-up align-bottom me-1"></i> 18.89%</span>
-                                                Target Margin</p>
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 18.89%</span> Target Margin</p>
                                         </div>
                                     </div>
-                                </div>
-                                <!--end col-->
+                                </div><!--end col-->
                                 <div class="col-lg-3">
                                     <div class="card mini-stats-wid">
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
-                                                    <p class="text-muted mb-2">This mont's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
+                                                    <p class="text-muted mb-2">This Month's Collections</p>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
                                                         <i class="mdi mdi-calendar-month-outline "></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i
-                                                        class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span>
-                                                Target Margin</p>
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
                                         </div>
                                     </div>
-                                </div>
-                                <!--end col-->
+                                </div><!--end col-->
                                 <div class="col-lg-3">
                                     <div class="card mini-stats-wid">
                                         <div class="card-body">
                                             <div class="d-flex flex-wrap">
                                                 <div class="me-3">
                                                     <p class="text-muted mb-2">This Year's Collections</p>
-                                                    <h5 class="mb-0 fw-bold">UGX 34,000</h5>
+                                                    <h5 class="mb-0 fw-bold">KES 34,000</h5>
                                                 </div>
 
                                                 <div class="avatar-sm ms-auto">
-                                                    <div
-                                                        class="avatar-title bg-light rounded-circle text-primary font-size-20">
+                                                    <div class="avatar-title bg-light rounded-circle text-primary font-size-20">
                                                         <i class="mdi mdi-calendar-check-outline "></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="card-body border-top py-3">
-                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i
-                                                        class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span>
-                                                Target Margin</p>
+                                            <p class="mb-0"> <span class="badge badge-soft-success me-1"><i class="bx bx-trending-up align-bottom me-1"></i> 8.41%</span> Target Margin</p>
                                         </div>
                                     </div>
-                                </div>
-                                <!--end col-->
-
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-sm-12 col-md-5 px-sm-30px">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card bg-primary-blue bg-primary-grad" >
-                                        <div class="card-header">
-                                            <h4 class="card-title text-white">Weekly Collections Comparison</h4>
-                                        </div>
-                                        <div class="card-body " id="weekly-rev">
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-header bg-transparent border-bottom">
-                                            <div class="">
-                                                <div class="d-flex flex-column">
-                                                    <h4 class="card-title mb-1 text-capitalize">In Transit vs. Arrived</h4>
-                                                    <p class="sele d-none">Click on a slice in the pie chart to explore revenue
-                                                        sources
-                                                        within the housing department.</p>
-                                                </div>
-                                                <ul class="nav nav-tabs nav-tabs-custom card-header-tabs ms-auto"
-                                                    role="tablist">
-                                                    <li class="nav-item"><a class="nav-link active daily-rev-source"
-                                                            data-bs-toggle="tab" href="#" role="tab"> Today</a>
-                                                    </li>
-                                                    <li class="nav-item"><a class="nav-link weekly-rev-source"
-                                                            data-bs-toggle="tab" href="#" role="tab"> This Week</a></li>
-                                                    <li class="nav-item"><a class="nav-link monthly-rev-source"
-                                                            data-bs-toggle="tab" href="#" role="tab"> This Month</a>
-                                                    </li>
-                                                    <li class="nav-item"><a class="nav-link year-rev-source"
-                                                            data-bs-toggle="tab" href="#" role="tab"> This FY</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        <div class="card-body">
-                                            <h4 class="card-title mb-0 d-none"></h4>
-                                            <div id="revenueSources"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div><!--end col-->
+                               
                             </div>
                         </div>
 
                         <div class="col-sm-12 col-md-7 px-sm-30px">
                             <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Annual Revenue Perfomance For this financial year</h4>
-                                </div>
 
-                                <div class="card-body">
-                                   
-                                    <div id="revenuePerfomance"></div>
-
-                                   
-                                </div>
-                               
-                            </div>
-
-                            <div class="col-12">
-                                <div class="card">
-                                   
-                                    <div class="card-header d-flex justify-content-between bg-white border-bottom">
-                                        <div>
-                                            <h4 class="card-title text-uppercase">Collections Customs Area</h4>
-                                            <p class="">10th Sep 2023 to 17th Sep 2023</p>
-                                        </div>
-                                        <div class="">
-                                            <div class="float-end d-flex">
-                                                <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                    <label class="input-group-text text-uppercase">From</label>
-                                                    <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
-                                                </div>
-
-                                                <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                    <label class="input-group-text text-uppercase">To:</label>
-                                                    <input class="form-control form-control-sm" type="date" value="2019-08-19" id="example-date-input">
-                                                </div>
-                                            </div>
+                                <div class="card-header bg-white border-bottom">
+                                    <div class="d-sm-flex flex-wrap">
+                                        <h4 class="card-title mb-4">Important Statistics</h4>
+                                        <div class="ms-auto">
+                                            <a href="javascript:void(0);" class="btn btn-primary"><i class="bx bx-plus align-middle"></i> Download</a>
                                         </div>
                                     </div>
-                                    <div class="card-body">
-                                        
-                                        <div id="subCounty-collections"></div>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div>
+                                        <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
+                                            <table class="table table-striped table-sm font-12 verticle-middle">
+                                                <thead class="table-dark">
+                                                    <tr class="font-weight-bold">
+                                                        <th scope="col" rowspan="2">Sub County</th>
+                                                        <th colspan="2" >Identified Businesses</th>
+                                                        <th scope="col" class="text-right" colspan="2">Application Invoices</th>
+                                                        <th class="text-right" colspan="2">Certification Invoices</th>                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <th>SBPs</th>
+                                                        <th>Liqure Outlets</th>
+                                                        <th class="text-right">Pending</th>
+                                                        <th class="text-right">Paid</th>
+                                                        <th class="text-right">Pending</th>
+                                                        <th class="text-right">Paid</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO NORTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                            
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO EAST</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RACHUONYO SOUTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA NORTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">RANGWE</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY TOWN</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">NDHIWA</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">SUBA SOUTH</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+    
+                                                    <tr value="[object Object]" style="cursor: pointer;">
+                                                        <td scope="row">HOMA BAY HQ</td>
+                                                        <td class="rNorth-alcohol">23</td>
+                                                        <td class="rNorth-alcohol">3</td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-danger text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                        <td class="table-success text-right">45 <span class="fw-bold text-dark">(12,000)</span></td>
+                                                    </tr>
+    
+                                                    
+    
+                                                    
+                                                    <!-- Continue replacing ward names in the same manner for other rows -->
+    
+                                                    <tr class="table-dark">
+                                                        <th><strong>Total</strong></th>
+                                                        <th class="alcoholTxt">12</th>
+                                                        <th class="alcoholTxt">123</th>
+                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-danger text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                        <td class="text-success text-right">45 <span class="fw-bold">(KES 12,000)</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        
+                      
+                        <div class="col-sm-12 col-md-5 px-sm-30px">
+                            <div class="card">
 
-                       
+                                <div class="card-header bg-white border-bottom">
+                                    <h4 class="card-title">Revenue Perfomance</h4>
+                                </div>
+                                
+                                <div class="card-body">
+                                    
+                                    <div id="revenuePerfomanceFire"></div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -1132,7 +1179,7 @@
                                                                     Paid</p>
 
                                                             </td>
-                                                            <td class="text-uppercase text-black fw-semibold">UGX 25,000
+                                                            <td class="text-uppercase text-black fw-semibold">KES 25,000
                                                             </td>
 
                                                         </tr>
@@ -1431,10 +1478,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div>
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske"
-                                                    width="100%" height="450" style="border:0;" allowfullscreen=""
-                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46449.71551863634!2d36.67523836781685!3d-1.3353441122372378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0cb9ff59a4a3%3A0x4073419e11826405!2sOrbital%20Africa%20%7C%20Land%20%26%20Topo%20Survey%2C%20GPS%2C%20GPR%2C%20GIS%2C%20Mapping%2C%20Drones%2C%20Training%20%26%20Geospatial%20Solutions!5e0!3m2!1sen!2ske!4v1691859398886!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -1498,27 +1542,27 @@
                                             <tr>
                                                 <td>01</td>
                                                 <td>Rent Deposit</td>
-                                                <td class="text-end">UGX 24,500</td>
+                                                <td class="text-end">KES 24,500</td>
                                             </tr>
 
                                             <tr>
                                                 <td>02</td>
                                                 <td>Monthly Rent</td>
-                                                <td class="text-end">UGX 12,000</td>
+                                                <td class="text-end">KES 12,000</td>
                                             </tr>
 
                                             <tr>
                                                 <td>03</td>
                                                 <td>TAX (18%)</td>
-                                                <td class="text-end">UGX 250</td>
+                                                <td class="text-end">KES 250</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="text-end">Total</td>
-                                                <td class="text-end fw-bold">UGX 36,750</td>
+                                                <td class="text-end fw-bold">KES 36,750</td>
                                             </tr>
                                             <tr>
                                                 <td colspan="2" class="text-end">Paid</td>
-                                                <td class="text-end  fw-bold">UGX 0.00</td>
+                                                <td class="text-end  fw-bold">KES 0.00</td>
                                             </tr>
 
                                             <tr>
@@ -1526,7 +1570,7 @@
                                                     <strong>Balance</strong>
                                                 </td>
                                                 <td class="border-0 text-end">
-                                                    <h5 class="m-0 text-uppercase fw-bold">UGX 36,750</h5>
+                                                    <h5 class="m-0 text-uppercase fw-bold">KES 36,750</h5>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -1561,7 +1605,7 @@
                                                 <td class="px-3">
                                                     <label for="">Amount To Be Paid</label>
                                                     <input type="text " class="form-control w-100 d-flex"
-                                                        placeholder="UGX" spellcheck="false" data-ms-editor="true">
+                                                        placeholder="KES" spellcheck="false" data-ms-editor="true">
 
                                                 </td>
                                                 <td class="text-right float-right">
@@ -1595,23 +1639,115 @@
             </div>
             <!-- invoice details -->
 
+            <!-- Bill creation modal -->
+            <div class="modal fade new-alcohol-application" data-backdrop="static" data-keyboard="false" tabindex="-1 " role="dialog " aria-labelledby="staticBackdropLabel " aria-hidden="true ">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header liq-header">
+                            <h5 class="modal-title text-uppercase" id="myLargeModalLabel">Institution Categories</h5>
+                           
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                       <div class="modal-body">
+                        <div class="new-vehicles-container-modal">
+                            <div class="col-12">
+                                <div class="py-2 mt-3">
+                                    <h3 class="font-size-15 fw-bold">Institution Categories Register</h3>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="">
+                                    <table class="table table-editable-1 align-middle table-edits">
+                                        <thead class="table-light">
+                                            <tr class="text-uppercase table-dark">
+                                                <th>#</th>
+                                                <th>Category</th>                                                
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">1.</td>
+                                                <td class="">
+                                                    Schools
+                                                </td> 
+                                            </tr>
+
+                                            <tr data-id="1">
+                                                <td style="width: 80px">2.</td>
+                                                <td class="">
+                                                    Hospitals
+                                                </td> 
+                                            </tr>
+                                            <tr data-id="1">
+                                                <td style="width: 80px">3.</td>
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                            </tr>
+
+                                            <tr class="cloneCharges d-none">
+                                                <td style="width: 80px " class="categoryIndex ">#</td>
+
+                                                <td class="">
+                                                    <input type="text " class="form-control " placeholder="Enter Category Name" spellcheck="false" data-ms-editor="true">
+                                                </td>
+                                              
+
+                                                <td class="text-right cell-change d-flex align-items-center justify-content-end">
+                                                    <a class="btn btn-light btn-rounded waves-effect btn-circle btn-transparent cancel-new-category-2 " title="Cancel "><i class="bx bx-x "></i></a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7" class="bg-light add-field-1 cursor-pointer">
+                                                    <span class="d-flex align-items-center "><i class="dripicons-plus mr-5 d-flex justify-content-center align-items-center font-21 "></i><span class="pl-5 ">Add Category</span></span>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+
+                                
+                            </div>
+                           </div>
+
+                       </div>
+
+                        
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- end of bill creation modal -->
+
+
             <footer class="footer ">
                 <div class="container-fluid ">
                     <div class="row ">
                         <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Uganda Revenue Authority
+                            </script> © Best Birdy
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                Developing Uganda Together
+                                County Billing System
+                            </div>
                         </div>
                     </div>
                 </div>
             </footer>
         </div>
         <!-- end main content-->
+
+
 
     </div>
     <!-- END layout-wrapper -->
@@ -1622,11 +1758,11 @@
     <script src="assets/libs/jquery/jquery.min.js "></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
-        </script>
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
-        </script>
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
     <script src="assets/libs/metismenu/metisMenu.min.js "></script>
     <script src="assets/libs/simplebar/simplebar.min.js "></script>
@@ -1672,658 +1808,102 @@
     <!-- timeline init js -->
     <script src="assets/js/pages/timeline.init.js"></script>
 
-    <!-- Application statuses -->
-    <script src="assets/js/pages/applicationStatuses.js"></script>
+     <!-- Application statuses -->
+     <script src="assets/js/pages/applicationStatuses.js"></script>
 
-    <!-- revenue perfomance -->
-    <script src="assets/js/pages/revenuePwerfomance.js"></script>
+     <!-- revenue perfomance -->
+     <script src="assets/js/pages/revenuePwerfomance.js"></script>
 
-    <!-- active vs expired certificats -->
-    <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+     <!-- active vs expired certificats -->
+     <script src="assets/js/pages/expiredVsActiveCerts.js"></script>
+
+     <!-- Table Editable plugin -->
+     <script src="assets/libs/table-edits/build/table-edits.min.js"></script>
+     <script src="assets/js/pages/table-editable.int.js"></script>
 
     <!-- App js -->
     <script src="assets/js/app.js "></script>
     <script src="assets/js/custom.js "></script>
 
-    <!-- //rentals vs other income sources for housing department -->
-
-
-
-    <!-- Script to generate the chart -->
     <script>
-        // Function to generate a random value between min and max
-        function getRandomValue(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        // Function to generate revenue data
-        function generateRevenueData() {
-            const data = [{
-                name: 'On Transait',
-                y: getRandomValue(100, 1000),
-                drilldown: 'rentals'
-            }, {
-                name: 'Other Revenue Streams',
-                y: getRandomValue(100, 1000),
-                drilldown: 'Arrived'
-            }];
-            return data;
-        }
-
-        // Function to generate drilldown data
-        function generateDrilldownData() {
-            const rentalsData = [
-                ['Oyugis Market', getRandomValue(500000, 1000000)],
-                ['Modern Market', getRandomValue(500000, 1000000)],
-                ['Mbita Market', getRandomValue(500000, 1000000)]
-            ];
-
-            const othersData = [
-                ['Site Value Rates', getRandomValue(500000, 1000000)],
-                ['Estate Development Fees', getRandomValue(500000, 1000000)],
-                ['Survey/Subdivision Fees', getRandomValue(500000, 1000000)],
-                ['Housing Development Fees', getRandomValue(500000, 1000000)]
-            ];
-
-            return {
-                rentals: rentalsData,
-                others: othersData
-            };
-        }
-
-        // Create the initial pie chart
-        const revenueChart = Highcharts.chart('revenueSources', {
-            chart: {
-                type: 'pie'
-            },
-            title: {
-                text: null
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true,
-                        format: '<b>{point.name}</b>: {point.percentage:.1f} %'
-                    }
-                }
-            },
-            tooltip: {
-                pointFormat: '<b>{point.name}</b>: {point.y} Vehicles'
-            },
-            series: [{
-                name: 'Collections',
-                colorByPoint: true,
-                data: generateRevenueData()
-            }],
-            drilldown: {
-                series: [{
-                    id: 'On Transit',
-                    data: generateDrilldownData().rentals
-                }, {
-                    id: 'Arrived',
-                    data: generateDrilldownData().others
-                }]
-            }
-        });
-
-        function resetDrillDown() {
-            revenueChart.options.drilldown.series.forEach(function (series) {
-                series.remove();
-            });
-        }
-
-
-        $('.daily-rev-source').on('click', function () {
-            // alert("daily is clicked")
-            //write a code that changes data when daily navigation is clicked
-            revenueChart.options.drilldown.series.forEach(function (series) {
-                series.remove();
-            });
-
-            const dailyData = generateRevenueData();
-            revenueChart.series[0].setData(dailyData);
-        })
-
-        $('.weekly-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const weeklyData = generateRevenueData();
-            revenueChart.series[0].setData(weeklyData);
-        })
-
-        $('.monthly-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const monthlyData = generateRevenueData();
-            revenueChart.series[0].setData(monthlyData);
-        })
-
-        $('.year-rev-source').on('click', function () {
-            //alert("weekly is clicked")
-            //write a code that changes data when weekly navigation is clicked
-
-
-            const yearData = generateRevenueData();
-            revenueChart.series[0].setData(yearData);
-        })
-    </script>
-
-    <!-- script comparing weekly collections -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Abbreviate days of the week to three letters
-            function abbreviateDay(day) {
-                return day.substring(0, 3);
-            }
-    
-            // Prepare the data
-            const data = [
-                ['Mon', 5000, 5500, 5200], // [Day, Daily Target, Last Week, This Week]
-                ['Tue', 5200, 5800, 5400],
-                ['Wed', 5100, 5600, 5300],
-                ['Thu', 5300, 5900, 5500],
-                ['Fri', 5400, 6000, 5600],
-                ['Sat', 5500, 6100, 5700],
-                ['Sun', 5300, 5900, 5500]
-            ];
-    
-            // Set the font family to Montserrat
-            Highcharts.setOptions({
-                chart: {
-                    style: {
-                        fontFamily: 'Montserrat, sans-serif'
-                    },
-                    backgroundColor: 'transparent'
-                }
-            });
-    
-            // Create the weekly column chart
-            Highcharts.chart('weekly-rev', {
-                chart: {
-                    type: 'column'
-                },
-                title: {
-                    text: null
-                },
-                xAxis: {
-                    categories: data.map(item => abbreviateDay(item[0])),
-                    labels: {
-                        style: {
-                            color: 'white'
-                        }
-                    }
-                },
-                yAxis: {
-                    title: {
-                        text: 'Revenue (UGX)',
-                        style: {
-                            color: 'white'
-                        }
-                    },
-                    labels: {
-                        style: {
-                            color: 'white'
-                        }
-                    },
-                    gridLineWidth: 1,
-                    gridLineColor: 'rgba(255, 255, 255, 0.5)',
-                    gridLineDashStyle: 'dot'
-                },
-                legend: {
-                    enabled: true,
-                    itemStyle: {
-                        color: 'white'
-                    }
-                },
-                tooltip: {
-                    shared: true,
-                    pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>UGX {point.y}</b><br/>',
-                    backgroundColor: '#023382',
-                    style: {
-                        color: 'white'
-                    }
-                },
-                plotOptions: {
-                    column: { // Use column plot options
-                      
-                     
-                        borderWidth: 0,
-                        borderRadius: 0, // Remove border radius
-                        colors: ['#023382', '#FFA500', '#FFD700', '#FF4500'] // Set custom column colors
-                    }
-                },
-                series: [{
-                    name: 'Daily Target',
-                    data: data.map(item => item[1]),
-                    color:"#6CB8FF"
-                }, {
-                    name: 'Last Week',
-                    data: data.map(item => item[2]),
-                    color:"#3C9EFF"
-                }, {
-                    name: 'This Week',
-                    data: data.map(item => item[3]),
-                    color:"#FF4500"
-                }]
-            });
-        });
-    </script>
-
-    <!-- annual revenue collections by housing revenue streams -->
-    <script>
-        // Data for the chart
-const data = [
-    ['Jul 23', 80000, 120000, 90000, 70000, 95000],
-    ['Aug 23', 82000, 125000, 92000, 71000, 97000],
-    ['Sep 23', 81000, 123000, 91000, 72000, 96000],
-    ['Oct 23', 83000, 126000, 93000, 73000, 98000],
-    ['Nov 23', 85000, 128000, 95000, 75000, 100000],
-    ['Dec 23', 88000, 130000, 98000, 78000, 103000],
-    ['Jan 24', 86000, 129000, 97000, 76000, 101000],
-    ['Feb 24', 87000, 132000, 99000, 77000, 102000],
-    ['Mar 24', 89000, 134000, 101000, 79000, 104000],
-    ['Apr 24', 88000, 131000, 98000, 78000, 103000],
-    ['May 24', 90000, 135000, 102000, 80000, 105000],
-    ['Jun 24', 91000, 137000, 103000, 81000, 106000]
-];
-
-// Create the stacked column chart
-Highcharts.chart('StreamRevenueChart', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Revenue Sources for Housing Department'
-    },
-    xAxis: {
-        categories: data.map(item => item[0])
-    },
-    yAxis: {
-        title: {
-            text: 'Revenue (UGX)'
-        }
-    },
-    tooltip: {
-        shared: true,
-        valueSuffix: ' UGX'
-    },
-    plotOptions: {
-        column: {
-            stacking: 'normal'
-        }
-    },
-    series: [{
-        name: 'Stall Rents',
-        data: data.map(item => item[1])
-    }, {
-        name: 'Housing Development Fees',
-        data: data.map(item => item[2])
-    }, {
-        name: 'Site Value Rates Fees',
-        data: data.map(item => item[3])
-    }, {
-        name: 'Estate Development Fees',
-        data: data.map(item => item[4])
-    }, {
-        name: 'Survey/Subdivision Fees',
-        data: data.map(item => item[5])
-    }]
-});
-
-    </script>
-
-
-<script>
-    // Data retrieved from https://gs.statcounter.com/browser-market-share#monthly-202201-202201-bar
-
-// Create the chart
-Highcharts.chart('subCounty-collections', {
-chart: {
-    type: 'column'
-},
-title: {
-    align: 'left',
-    text: null
-},
-
-accessibility: {
-    announceNewData: {
-        enabled: true
+        // Your chart generation code will go here
+document.addEventListener('DOMContentLoaded', function () {
+    // Abbreviate months to three letters
+    function abbreviateMonth(month) {
+        return month.substring(0, 3);
     }
-},
-xAxis: {
-    type: 'category'
-},
-yAxis: {
-    title: {
-        text: 'Collected Revenue'
-    }
+    
+    // Prepare the data
+    const data = [
+        ['Jul 2023', 50000, 60000, 55000], // [Month, Last Year, Target, Actual]
+        ['Aug 2023', 55000, 62000, 58000],
+        ['Sep 2023', 52000, 61000, 56000],
+        ['Oct 2023', 53000, 63000, 57000],
+        ['Nov 2023', 54000, 59000, 56000],
+        ['Dec 2023', 60000, 65000, 62000],
+        ['Jan 2024', 58000, 67000, 59000],
+        ['Feb 2024', 59000, 68000, 60000],
+        ['Mar 2024', 61000, 70000, 62000],
+        ['Apr 2024', 60000, 69000, 61000],
+        ['May 2024', 62000, 72000, 63000],
+        ['Jun 2024', 63000, 71000, 64000]
+    ];
 
-},
-legend: {
-    enabled: false
-},
- plotOptions: {
-    series: {
-        borderWidth: 0,
-         pointWidth: 40, // Set the desired column width
-           borderRadius: 0, // Remove border radius
-        dataLabels: {
-            enabled: true,
-             inside: true, 
-            format: 'UGX {point.y:,.0f}',  // Updated format to include 'UGX' and remove decimals
-            rotation: -90,
-            align: 'left',
-            verticalAlign: 'middle',
-            x: 4,
-            y: 10,
+    // Set the font family to Montserrat
+    Highcharts.setOptions({
+        chart: {
             style: {
-                fontSize: '12px'
+                fontFamily: 'Montserrat, sans-serif'
+            }
+        }
+    });
+
+    // Create the bar chart
+    Highcharts.chart('revenuePerfomanceFire', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: null
+        },
+        xAxis: {
+            categories: data.map(item => abbreviateMonth(item[0]))
+        },
+        yAxis: {
+            title: {
+                text: 'Revenue (KES)'
             }
         },
-        color: 'black', // Set column color to black
-        color: '#023382'
-    },
-    
-},
-
-tooltip: {
-headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>UGX {point.y:,.0f}</b><br/>'
-},
-
-
-series: [
-    {
-        name: 'Sub County Collections',
-        colorByPoint: false,
-        data: 
-        [
-        {
-    name: 'Malaba Customs Station',
-    y: generateRandomNumber(),
-    drilldown: 'Chrome'
-},
-{
-    name: 'Busia Customs Station',
-    y: generateRandomNumber(),
-    drilldown: 'Safari'
-},
-{
-    name: 'Entebbe International Airport',
-    y: generateRandomNumber(),
-    drilldown: 'Firefox'
-},
-{
-    name: 'Kampala Customs Headquarters',
-    y: generateRandomNumber(),
-    drilldown: 'Edge'
-},
-{
-    name: 'Elegu',
-    y: generateRandomNumber(),
-    drilldown: 'Opera'
-},
-{
-    name: 'Cyanika',
-    y: generateRandomNumber(),
-    drilldown: 'Internet Explorer'
-},
-{
-    name: 'Others',
-    y: generateRandomNumber(),
-    drilldown: null
-}
-
-        ]
-    }
-],
-drilldown: {
-    breadcrumbs: {
-        position: {
-            align: 'left'
-        }
-    },
-    series: [
-        {
-            name: 'Chrome',
-            id: 'Chrome',
-            data: [
-                [
-                    'Zone A',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone B',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone C',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone D',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone E',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone F',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone G',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone H',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone I',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone J',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone K',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone L',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone M',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone N',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone O',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone P',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone U',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone V',
-                     generateRandomNumber()
-                ]
-            ]
+        legend: {
+            enabled: true
         },
-        {
-            name: 'Firefox',
-            id: 'Firefox',
-            data: [
-                [
-                    'Zone W',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone X',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone Y',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone Z',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AA',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AB',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AC',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AD',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AE',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AF',
-                     generateRandomNumber()
-                ]
-            ]
+        tooltip: {
+            shared: true,
+            pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>KES {point.y}</b><br/>'
         },
-        {
-            name: 'Internet Explorer',
-            id: 'Internet Explorer',
-            data: [
-                [
-                    'Zone AG',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AH',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AI',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AJ',
-                     generateRandomNumber()
-                ]
-            ]
+        plotOptions: {
+            bar: {
+                pointWidth: 20, // Adjust the width of each column
+                stacking: 'normal', // Prevent stacking
+                borderWidth: 0
+            }
         },
-        {
-            name: 'Safari',
-            id: 'Safari',
-            data: [
-                [
-                    'Zone AK',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AL',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AM',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AN',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AO',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AP',
-                     generateRandomNumber()
-                ]
-            ]
-        },
-        {
-            name: 'Edge',
-            id: 'Edge',
-            data: [
-                [
-                    'Zone AU',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AV',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AW',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone AX',
-                     generateRandomNumber()
-                ]
-            ]
-        },
-        {
-            name: 'Opera',
-            id: 'Opera',
-            data: [
-                [
-                    'Zone AY',
-                    generateRandomNumber()
-                ],
-                [
-                    'Zone AZ',
-                     generateRandomNumber()
-                ],
-                [
-                    'Zone BA',
-                   generateRandomNumber()
-                ]
-            ]
-        }
-    ]
-}
+        series: [{
+            name: 'Last Year Collections',
+            data: data.map(item => item[1])
+        }, {
+            name: 'Created Invoices',
+            data: data.map(item => item[2]),
+            color:"red"
+        }, {
+            name: 'This Year Collections',
+            data: data.map(item => item[3]),
+            color:"green"
+        }]
+    });
 });
 
-function generateRandomNumber() {
-return Math.floor(Math.random() * (500000 - 40000 + 1)) + 40000;
-}
-
-</script>
-    
-    
-    
-    
-    
-    <!-- end of weekly collections -->
-
-
+    </script>
 </body>
 
 
